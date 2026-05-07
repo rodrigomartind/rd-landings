@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospedaje Edén — Tu parada de confianza en San Luis</title>
+<meta name="description" content="Hospedaje económico en San Luis. Habitaciones limpias y espaciosas, trato cercano y la mejor relación precio-calidad para viajeros de paso.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Fraunces', 'serif'],
+        sans: ['DM Sans', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace']
+      },
+      colors: {
+        cream: '#F4EBDC',
+        sand: '#E8D9BE',
+        terra: '#B0532E',
+        clay: '#7A3520',
+        ink: '#1F1A14',
+        moss: '#3F4E3A'
+      }
+    }
+  }
+}
+</script>
+<style>
+  body { background-color: #F4EBDC; color: #1F1A14; }
+  .grain { background-image: radial-gradient(rgba(31,26,20,0.04) 1px, transparent 1px); background-size: 4px 4px; }
+  .underline-wavy { text-decoration: underline; text-decoration-style: wavy; text-decoration-color: #B0532E; text-underline-offset: 6px; }
+  .vline::before { content: ''; display: inline-block; width: 1px; height: 0.9em; background: currentColor; margin: 0 0.7em; vertical-align: middle; opacity: 0.4; }
+  a:focus-visible, button:focus-visible { outline: 2px dashed #B0532E; outline-offset: 4px; }
+</style>
+</head>
+<body class="font-sans antialiased grain">
+
+<!-- TOP NAV -->
+<header class="border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="font-display text-xl font-semibold tracking-tight">Edén<span class="text-terra">.</span></div>
+    <nav class="hidden md:flex items-center gap-8 text-sm">
+      <a href="#lugar" class="hover:text-terra transition">El lugar</a>
+      <a href="#valoran" class="hover:text-terra transition">Lo que valoran</a>
+      <a href="#voces" class="hover:text-terra transition">Voces de huéspedes</a>
+      <a href="#visitar" class="hover:text-terra transition">Cómo llegar</a>
+    </nav>
+    <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Hospedaje%20Ed%C3%A9n%20y%20quiero%20charlar." class="hidden md:inline-block bg-ink text-cream px-4 py-2 text-sm font-medium hover:bg-terra transition">Reservar</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 pt-16 md:pt-24 pb-20 md:pb-32">
+    <div class="grid md:grid-cols-12 gap-8 items-end">
+      <div class="md:col-span-9">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-clay mb-8">Hospedaje · San Luis · Desde hace años</p>
+        <h1 class="font-display font-semibold leading-[0.95] tracking-tight text-ink" style="font-size: clamp(2.8rem, 8.5vw, 7rem);">
+          Descansá donde<br>
+          <span class="italic font-normal text-terra">te tratan</span><br>
+          como en casa.
+        </h1>
+      </div>
+      <div class="md:col-span-3 md:text-right">
+        <p class="font-display italic text-lg md:text-xl text-ink/70 leading-snug">
+          Una parada de paso<br>que muchos hicieron costumbre.
+        </p>
+      </div>
+    </div>
+
+    <!-- Trust line baked in -->
+    <div class="mt-16 md:mt-24 border-t border-ink/15 pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <p class="font-mono text-sm text-ink/70">
+        ★ <span class="text-ink font-medium">4,3</span> <span class="vline"></span> 432 opiniones reales en Google <span class="vline"></span> Abierto las 24 hs
+      </p>
+      <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Hospedaje%20Ed%C3%A9n%20y%20quiero%20charlar." class="inline-flex items-center gap-3 bg-terra text-cream px-6 py-4 font-medium hover:bg-clay transition group">
+        Consultar disponibilidad
+        <span class="group-hover:translate-x-1 transition">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BIG QUOTE / ANGLE -->
+<section class="bg-ink text-cream py-20 md:py-28">
+  <div class="max-w-5xl mx-auto px-6">
+    <p class="font-mono text-xs uppercase tracking-[0.25em] text-sand/60 mb-8">El motivo por el que vuelven</p>
+    <blockquote class="font-display font-normal leading-[1.05] tracking-tight" style="font-size: clamp(2rem, 5.5vw, 4.2rem);">
+      <span class="text-terra">“</span>Hace <span class="italic">8 años</span> que vamos. Los dueños unos genios. Siempre muy bien atendidos.<span class="text-terra">”</span>
+    </blockquote>
+    <p class="mt-8 font-mono text-sm text-sand/70">— Nancy Romero, en Google</p>
+  </div>
+</section>
+
+<!-- LO QUE VALORAN -->
+<section id="valoran" class="py-20 md:py-28">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-12 gap-10 mb-16">
+      <div class="md:col-span-5">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-clay mb-4">02 — Lo que más valoran</p>
+        <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight">Cuatro cosas <span class="italic">simples</span> hechas bien.</h2>
+      </div>
+      <div class="md:col-span-6 md:col-start-7 self-end">
+        <p class="text-ink/70 text-lg leading-relaxed">No prometemos lujos. Prometemos lo que viste repetido en cada reseña: una habitación limpia, un trato genuino y un precio que tiene sentido para el viajero.</p>
+      </div>
+    </div>
+
+    <div class="space-y-0 border-t border-ink/15">
+      <article class="grid md:grid-cols-12 gap-6 py-10 border-b border-ink/15 group">
+        <div class="md:col-span-1 font-display text-5xl text-terra/80 font-semibold">01</div>
+        <div class="md:col-span-4">
+          <h3 class="font-display text-2xl md:text-3xl font-semibold">Limpias y espaciosas.</h3>
+        </div>
+        <div class="md:col-span-7 text-ink/75 leading-relaxed">
+          La palabra <em class="font-display">limpieza</em> aparece en casi todas las opiniones, y no es casualidad. Habitaciones amplias para descansar de verdad, sin sentirte apretado después de un día en la ruta.
+        </div>
+      </article>
+
+      <article class="grid md:grid-cols-12 gap-6 py-10 border-b border-ink/15">
+        <div class="md:col-span-1 font-display text-5xl text-terra/80 font-semibold">02</div>
+        <div class="md:col-span-4">
+          <h3 class="font-display text-2xl md:text-3xl font-semibold">Dueños que reciben.</h3>
+        </div>
+        <div class="md:col-span-7 text-ink/75 leading-relaxed">
+          Acá no hay recepción anónima ni protocolos fríos. Los dueños están, charlan, recomiendan. Si llegás en moto, mejor todavía: también son motoqueros y entienden el viaje.
+        </div>
+      </article>
+
+      <article class="grid md:grid-cols-12 gap-6 py-10 border-b border-ink/15">
+        <div class="md:col-span-1 font-display text-5xl text-terra/80 font-semibold">03</div>
+        <div class="md:col-span-4">
+          <h3 class="font-display text-2xl md:text-3xl font-semibold">Precio que da gusto.</h3>
+        </div>
+        <div class="md:col-span-7 text-ink/75 leading-relaxed">
+          La frase <em class="font-display">“excelente relación precio-calidad”</em> se repite hasta el cansancio. Pagás lo justo por lo que recibís, y eso —en la ruta— vale oro.
+        </div>
+      </article>
+
+      <article class="grid md:grid-cols-12 gap-6 py-10 border-b border-ink/15">
+        <div class="md:col-span-1 font-display text-5xl text-terra/80 font-semibold">04</div>
+        <div class="md:col-span-4">
+          <h3 class="font-display text-2xl md:text-3xl font-semibold">A un paso del centro.</h3>
+        </div>
+        <div class="md:col-span-7 text-ink/75 leading-relaxed">
+          Cómodo para entrar y salir cuando lo necesites. Pensado para viajeros de paso que buscan parar, descansar y seguir, sin perder tiempo.
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EL LUGAR -->
+<section id="lugar" class="bg-sand py-20 md:py-28">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-clay mb-4">03 — El lugar</p>
+        <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight mb-6">Una parada hecha para <span class="italic">recuperar fuerzas</span>.</h2>
+        <p class="text-ink/75 leading-relaxed mb-6">
+          Hospedaje Edén nació pensando en quien llega de la ruta: el viajero en auto, la pareja en moto, la familia que cruza la provincia. Habitaciones para descansar tranquilo y arrancar al día siguiente como nuevo.
+        </p>
+        <p class="text-ink/75 leading-relaxed">
+          Recepción 24 horas, los siete días. Llegues a la hora que llegues, hay alguien esperándote.
+        </p>
+      </div>
+
+      <div class="md:col-span-7">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-cream p-6 border border-ink/10">
+            <div class="font-display text-5xl font-semibold text-terra mb-2">24<span class="text-2xl">hs</span></div>
+            <p class="font-mono text-xs uppercase tracking-wider text-ink/60">Recepción todos los días</p>
+          </div>
+          <div class="bg-cream p-6 border border-ink/10">
+            <div class="font-display text-5xl font-semibold text-terra mb-2">432</div>
+            <p class="font-mono text-xs uppercase tracking-wider text-ink/60">Opiniones en Google</p>
+          </div>
+          <div class="bg-cream p-6 border border-ink/10">
+            <div class="font-display text-5xl font-semibold text-terra mb-2">8<span class="text-2xl">+</span></div>
+            <p class="font-mono text-xs uppercase tracking-wider text-ink/60">Años de huéspedes que vuelven</p>
+          </div>
+          <div class="bg-cream p-6 border border-ink/10">
+            <div class="font-display text-5xl font-semibold text-terra mb-2">★ 4,3</div>
+            <p class="font-mono text-xs uppercase tracking-wider text-ink/60">Promedio Google Reviews</p>
+          </div>
+        </div>
+
+        <div class="mt-6 bg-cream border border-ink/10 p-6">
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-clay mb-3">Pensado para</p>
+          <p class="font-display text-xl leading-snug">
+            Viajeros de paso · Motoqueros · Familias en tránsito · Quienes prefieren <em>lo justo</em> antes que lo caro.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOCES -->
+<section id="voces" class="py-20 md:py-28">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-16 max-w-3xl">
+      <p class="font-mono text-xs uppercase tracking-[0.25em] text-clay mb-4">04 — Voces de huéspedes</p>
+      <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight">No lo decimos nosotros. Lo dicen ellos, en <span class="underline-wavy">Google</span>.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+      <article class="border-l-2 border-terra pl-6 py-2">
+        <p class="font-display text-xl md:text-2xl italic leading-snug mb-4">“Excelente relación precio calidad. Los dueños son motoqueros y muy hospitalarios! Muy recomendable.”</p>
+        <p class="font-mono text-xs uppercase tracking-wider text-ink/60">Carolina Pinasco · ★★★★★</p>
+      </article>
+
+      <article class="border-l-2 border-terra pl-6 py-2">
+        <p class="font-display text-xl md:text-2xl italic leading-snug mb-4">“Las habitaciones son muy limpias y espaciosas. Lo busqué por Google, venía de viaje y me pareció un buen precio.”</p>
+        <p class="font-mono text-xs uppercase tracking-wider text-ink/60">Juan Carlos Segovia · ★★★★★</p>
+      </article>
+
+      <article class="border-l-2 border-terra pl-6 py-2">
+        <p class="font-display text-xl md:text-2xl italic leading-snug mb-4">“Muy buen lugar para descanso y de paso. Hace 8 años que vamos. Los dueños, unos genios. Siempre muy bien atendidos.”</p>
+        <p class="font-mono text-xs uppercase tracking-wider text-ink/60">Nancy Romero · ★★★★★</p>
+      </article>
+
+      <article class="border-l-2 border-terra pl-6 py-2">
+        <p class="font-display text-xl md:text-2xl italic leading-snug mb-4">“Excelente atención, habitaciones cómodas y limpias.”</p>
+        <p class="font-mono text-xs uppercase tracking-wider text-ink/60">A. Godoy · ★★★★★</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA INTERMEDIO -->
+<section class="bg-terra text-cream py-20 md:py-28">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <p class="font-mono text-xs uppercase tracking-[0.25em] text-cream/70 mb-6">Reservá tu noche</p>
+    <h2 class="font-display font-semibold leading-[1] mb-8" style="font-size: clamp(2.2rem, 6vw, 4.5rem);">
+      Tu próxima parada<br><span class="italic">ya tiene lugar</span>.
+    </h2>
+    <p class="text-cream/85 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+      Escribinos por WhatsApp y coordinamos en minutos. Decinos cuándo llegás, cuántos vienen y resolvemos.
+    </p>
+    <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Hospedaje%20Ed%C3%A9n%20y%20quiero%20charlar." class="inline-flex items-center gap-3 bg-cream text-ink px-8 py-5 font-medium text-lg hover:bg-ink hover:text-cream transition">
+      Reservar por WhatsApp
+      <span>→</span>
+    </a>
+    <p class="font-mono text-xs text-cream/60 mt-6">+54 266 440-2114 · respuesta directa de los dueños</p>
+  </div>
+</section>
+
+<!-- VISITAR -->
+<section id="visitar" class="py-20 md:py-28">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-clay mb-4">05 — Cómo llegar</p>
+        <h2 class="font-display text-4xl md:text-5xl font-semibold leading-tight mb-10">San Luis,<br>a un paso<br><span class="italic text-terra">del centro</span>.</h2>
+
+        <div class="space-y-6">
+          <div class="border-t border-ink/15 pt-4">
+            <p class="font-mono text-xs uppercase tracking-wider text-ink/50 mb-1">Dirección</p>
+            <p class="font-display text-lg">Paso de los Libres 1245<br>D5700 San Luis, Argentina</p>
+          </div>
+          <div class="border-t border-ink/15 pt-4">
+            <p class="font-mono text-xs uppercase tracking-wider text-ink/50 mb-1">Teléfono</p>
+            <a href="tel:+542664402114" class="font-display text-lg hover:text-terra transition">+54 266 440-2114</a>
+          </div>
+          <div class="border-t border-ink/15 pt-4">
+            <p class="font-mono text-xs uppercase tracking-wider text-ink/50 mb-1">Atención</p>
+            <p class="font-display text-lg">Las 24 horas, todos los días del año</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-7">
+        <div class="border border-ink/15 overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps?q=-33.2928152,-66.30479629999999&hl=es&z=16&output=embed"
+            width="100%"
+            height="480"
+            style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de Hospedaje Edén en San Luis">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section class="bg-ink text-cream py-16">
+  <div class="max-w-5xl mx-auto px-6">
+    <p class="font-display italic text-2xl md:text-3xl leading-snug max-w-3xl">
+      Hospedaje Edén — un lugar al que <span class="text-terra">se vuelve</span>, año tras año, porque el trato no se compra.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-cream/70 border-t border-cream/10 py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <p class="font-mono text-sm">
+      Una propuesta de <span class="text-cream">Rodrigo Domínguez</span> ·
+      <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Hospedaje%20Ed%C3%A9n%20y%20quiero%20charlar." class="underline hover:text-terra transition">agendá una llamada</a>
+    </p>
+    <p class="font-mono text-xs text-cream/40">Hospedaje Edén · San Luis, Argentina</p>
+  </div>
+</footer>
+
+</body>
+</html>

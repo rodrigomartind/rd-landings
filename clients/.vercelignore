@@ -1,0 +1,3 @@
+# Excluir metadata interna de cada landing del deploy
+**/_meta.json
+**/_prompt.txt

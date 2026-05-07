@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complejo Deportivo Toribio Mendoza — Gimnasio + Pileta + Funcional · San Luis</title>
+<meta name="description" content="El complejo deportivo más completo de San Luis: máquinas modernas, entrenamiento funcional y pileta con múltiples profundidades. Pringles 530, San Luis Capital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['"Bricolage Grotesque"', 'serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+          sans: ['Manrope', 'sans-serif'],
+        },
+        colors: {
+          ink: '#0d0d0d',
+          bone: '#f1ede4',
+          lime: '#d6ff3d',
+          rust: '#c5421a',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', sans-serif; background: #f1ede4; color: #0d0d0d; }
+  .display { font-family: 'Bricolage Grotesque', serif; font-variation-settings: "wdth" 95; letter-spacing: -0.04em; line-height: 0.88; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .marquee { mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent); }
+  .marquee-track { animation: scroll 40s linear infinite; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .ticker-dot::before { content: "●"; margin: 0 1.5rem; color: #d6ff3d; }
+  .grain { background-image: radial-gradient(rgba(0,0,0,0.06) 1px, transparent 1px); background-size: 4px 4px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid #d6ff3d; outline-offset: 4px; }
+  .underline-accent { background-image: linear-gradient(transparent 70%, #d6ff3d 70%); }
+</style>
+</head>
+<body class="bg-bone text-ink antialiased">
+
+<!-- TOP BAR -->
+<div class="bg-ink text-bone overflow-hidden border-b border-ink">
+  <div class="marquee py-3 whitespace-nowrap">
+    <div class="marquee-track inline-block mono text-xs uppercase tracking-widest">
+      <span class="ticker-dot">Lun a Vie · 7 a 24 hs</span>
+      <span class="ticker-dot">Sábados · 10 a 22 hs</span>
+      <span class="ticker-dot">Pringles 530 · San Luis Capital</span>
+      <span class="ticker-dot">Pileta climatizada</span>
+      <span class="ticker-dot">Funcional</span>
+      <span class="ticker-dot">Más de 1500 personas ya entrenan acá</span>
+      <span class="ticker-dot">Lun a Vie · 7 a 24 hs</span>
+      <span class="ticker-dot">Sábados · 10 a 22 hs</span>
+      <span class="ticker-dot">Pringles 530 · San Luis Capital</span>
+      <span class="ticker-dot">Pileta climatizada</span>
+      <span class="ticker-dot">Funcional</span>
+      <span class="ticker-dot">Más de 1500 personas ya entrenan acá</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="px-6 md:px-12 py-6 flex justify-between items-center border-b border-ink/15">
+  <div class="mono text-xs md:text-sm uppercase tracking-widest">
+    <span class="font-bold">Toribio Mendoza</span> <span class="opacity-50">/ Complejo Deportivo</span>
+  </div>
+  <a href="#contacto" class="hidden md:inline-block mono text-xs uppercase tracking-widest border border-ink px-4 py-2 hover:bg-ink hover:text-bone transition">
+    Cómo llegar →
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="relative px-6 md:px-12 pt-12 md:pt-20 pb-16 md:pb-24 overflow-hidden">
+  <div class="grid md:grid-cols-12 gap-6 items-end">
+    <div class="md:col-span-12">
+      <div class="mono text-xs uppercase tracking-widest mb-6 md:mb-10 flex items-center gap-3">
+        <span class="inline-block w-12 h-px bg-ink"></span>
+        San Luis Capital · desde la avenida Pringles
+      </div>
+      <h1 class="display font-extrabold text-[18vw] md:text-[14vw] leading-[0.85]">
+        Toribio<br>
+        <span class="italic font-semibold">Mendoza</span><span class="text-rust">.</span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-12 gap-6 mt-12 md:mt-16">
+    <div class="md:col-span-7 md:col-start-1">
+      <p class="display text-3xl md:text-5xl leading-[1.05] font-semibold">
+        El complejo más completo de la ciudad. <span class="underline-accent">Máquinas, funcional y pileta</span>, todo a la vuelta de Plaza Pringles.
+      </p>
+    </div>
+    <div class="md:col-span-4 md:col-start-9 mono text-sm leading-relaxed border-l-2 border-ink pl-4">
+      <div class="text-xs uppercase tracking-widest opacity-60 mb-2">Por qué lo eligen</div>
+      Casi nunca tenés que esperar para usar una máquina. Tres profundidades de pileta para nadar o aprender. Y todo bajo el mismo techo.
+    </div>
+  </div>
+
+  <div class="mt-12 md:mt-16 flex flex-col md:flex-row gap-4 md:items-center">
+    <a href="#contacto" class="inline-block bg-ink text-bone px-8 py-5 mono text-sm uppercase tracking-widest hover:bg-rust transition">
+      Sumate al complejo →
+    </a>
+    <a href="#planes" class="mono text-xs uppercase tracking-widest underline underline-offset-4">
+      Ver qué incluye la cuota
+    </a>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="bg-ink text-bone px-6 md:px-12 py-12 md:py-20">
+  <div class="grid md:grid-cols-12 gap-6 items-center">
+    <div class="md:col-span-4">
+      <div class="display text-7xl md:text-9xl font-extrabold leading-none">
+        4,3<span class="text-lime">★</span>
+      </div>
+      <div class="mono text-xs uppercase tracking-widest mt-3 opacity-70">Promedio en Google</div>
+    </div>
+    <div class="md:col-span-4">
+      <div class="display text-7xl md:text-9xl font-extrabold leading-none">
+        1.589
+      </div>
+      <div class="mono text-xs uppercase tracking-widest mt-3 opacity-70">Opiniones reales</div>
+    </div>
+    <div class="md:col-span-4 mono text-sm leading-relaxed border-l-2 border-lime pl-4">
+      Más de mil quinientos socios ya tomaron la decisión. En San Luis no hay otro complejo que sume gimnasio + funcional + pileta en una sola dirección.
+    </div>
+  </div>
+</section>
+
+<!-- LO QUE MÁS VALORAN -->
+<section class="px-6 md:px-12 py-20 md:py-32">
+  <div class="mono text-xs uppercase tracking-widest mb-6 flex items-center gap-3">
+    <span class="inline-block w-12 h-px bg-ink"></span>
+    Lo que más valoran los que vienen
+  </div>
+  <h2 class="display text-5xl md:text-8xl font-extrabold mb-16 md:mb-24 max-w-5xl">
+    Vas a entrenar como querés, <span class="italic font-semibold">cuando querés</span>.
+  </h2>
+
+  <div class="space-y-0 border-t border-ink/20">
+    <article class="grid md:grid-cols-12 gap-6 py-10 border-b border-ink/20 group hover:bg-ink hover:text-bone transition px-2 md:px-6 -mx-2 md:-mx-6">
+      <div class="md:col-span-1 mono text-sm opacity-60">01</div>
+      <div class="md:col-span-4">
+        <h3 class="display text-3xl md:text-4xl font-semibold leading-tight">Equipamiento que no te hace esperar</h3>
+      </div>
+      <div class="md:col-span-7 max-w-xl">
+        <p class="text-base md:text-lg leading-relaxed">Muchas máquinas modernas distribuidas para que casi nunca haya cola. Llegás, calentás, entrenás. Sin perder tiempo mirando el reloj.</p>
+      </div>
+    </article>
+
+    <article class="grid md:grid-cols-12 gap-6 py-10 border-b border-ink/20 group hover:bg-ink hover:text-bone transition px-2 md:px-6 -mx-2 md:-mx-6">
+      <div class="md:col-span-1 mono text-sm opacity-60">02</div>
+      <div class="md:col-span-4">
+        <h3 class="display text-3xl md:text-4xl font-semibold leading-tight">Pileta con tres profundidades</h3>
+      </div>
+      <div class="md:col-span-7 max-w-xl">
+        <p class="text-base md:text-lg leading-relaxed">Para los que recién están aprendiendo a nadar y para los que vienen a sumar largos al cierre del entreno. Una pileta para cada momento.</p>
+      </div>
+    </article>
+
+    <article class="grid md:grid-cols-12 gap-6 py-10 border-b border-ink/20 group hover:bg-ink hover:text-bone transition px-2 md:px-6 -mx-2 md:-mx-6">
+      <div class="md:col-span-1 mono text-sm opacity-60">03</div>
+      <div class="md:col-span-4">
+        <h3 class="display text-3xl md:text-4xl font-semibold leading-tight">Zona de funcional con espacio real</h3>
+      </div>
+      <div class="md:col-span-7 max-w-xl">
+        <p class="text-base md:text-lg leading-relaxed">Un sector dedicado al entrenamiento funcional. Para los que prefieren peso corporal, kettlebells, soga y movimiento constante.</p>
+      </div>
+    </article>
+
+    <article class="grid md:grid-cols-12 gap-6 py-10 border-b border-ink/20 group hover:bg-ink hover:text-bone transition px-2 md:px-6 -mx-2 md:-mx-6">
+      <div class="md:col-span-1 mono text-sm opacity-60">04</div>
+      <div class="md:col-span-4">
+        <h3 class="display text-3xl md:text-4xl font-semibold leading-tight">Limpio, moderno, en el centro</h3>
+      </div>
+      <div class="md:col-span-7 max-w-xl">
+        <p class="text-base md:text-lg leading-relaxed">A pasos de Plaza Pringles. Espacios mantenidos, ambiente que motiva a venir. Por algo lo eligen por sobre los demás de la ciudad.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- TODO EN UN LUGAR -->
+<section id="planes" class="bg-lime text-ink px-6 md:px-12 py-20 md:py-32 border-y-4 border-ink">
+  <div class="mono text-xs uppercase tracking-widest mb-8">Tres entrenamientos · una sola cuota</div>
+  <h2 class="display text-6xl md:text-[10rem] font-extrabold leading-[0.85] mb-16">
+    Entrená.<br>
+    Nadá.<br>
+    <span class="italic font-semibold">Recuperate.</span>
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+    <div class="border-t-2 border-ink pt-6">
+      <div class="mono text-xs uppercase tracking-widest opacity-60 mb-4">Sala de Musculación</div>
+      <p class="display text-2xl font-semibold leading-tight mb-3">Mancuernas, máquinas y barras para todos los niveles.</p>
+      <p class="text-sm leading-relaxed">Equipamiento variado para rutinas de fuerza, hipertrofia o tonificación. Asesoramiento incluido.</p>
+    </div>
+    <div class="border-t-2 border-ink pt-6">
+      <div class="mono text-xs uppercase tracking-widest opacity-60 mb-4">Pileta</div>
+      <p class="display text-2xl font-semibold leading-tight mb-3">Aguas para aprender, nadar y complementar.</p>
+      <p class="text-sm leading-relaxed">Múltiples profundidades para principiantes, intermedios y avanzados. Una de las pocas piletas con esta variedad en San Luis.</p>
+    </div>
+    <div class="border-t-2 border-ink pt-6">
+      <div class="mono text-xs uppercase tracking-widest opacity-60 mb-4">Funcional</div>
+      <p class="display text-2xl font-semibold leading-tight mb-3">Entrenamiento integral, dinámico y guiado.</p>
+      <p class="text-sm leading-relaxed">Sector con espacio amplio para circuitos, peso corporal y trabajo metabólico.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="px-6 md:px-12 py-20 md:py-32">
+  <div class="mono text-xs uppercase tracking-widest mb-6 flex items-center gap-3">
+    <span class="inline-block w-12 h-px bg-ink"></span>
+    Lo dicen ellos, no nosotros
+  </div>
+  <h2 class="display text-5xl md:text-7xl font-extrabold mb-16 max-w-4xl">
+    Reseñas reales <span class="italic font-semibold">desde Google</span>.
+  </h2>
+
+  <div class="grid md:grid-cols-12 gap-6 md:gap-10">
+    <blockquote class="md:col-span-7 md:col-start-1 border-l-2 border-rust pl-6 md:pl-10">
+      <p class="display text-2xl md:text-4xl leading-tight font-semibold">
+        "Gimnasio bien equipado, con buenas máquinas y espacios para entrenamiento funcional. Además, cuenta con pileta, lo que suma mucho. Ideal para quienes buscan un espacio completo."
+      </p>
+      <footer class="mono text-xs uppercase tracking-widest mt-6 opacity-70">
+        — Denis Matías Mitchell · ★★★★★
+      </footer>
+    </blockquote>
+
+    <blockquote class="md:col-span-5 md:col-start-8 md:mt-32 border-l-2 border-ink pl-6 md:pl-8">
+      <p class="display text-xl md:text-2xl leading-snug font-semibold italic">
+        "Muy bueno para aprender a nadar, varias piletas de diferentes profundidades."
+      </p>
+      <footer class="mono text-xs uppercase tracking-widest mt-4 opacity-70">
+        — Andrés Arrieta Lozano · ★★★★★
+      </footer>
+    </blockquote>
+
+    <blockquote class="md:col-span-7 md:col-start-3 md:mt-12 border-l-2 border-rust pl-6 md:pl-10">
+      <p class="display text-2xl md:text-3xl leading-tight font-semibold">
+        "Muy buen gimnasio, amplio, moderno y con muchas máquinas, así que casi nunca hay que esperar para hacer uso. Buena ubicación, buen ambiente, siempre lo tienen limpio. <span class="bg-lime not-italic">Lo elijo por sobre los demás de la ciudad.</span>"
+      </p>
+      <footer class="mono text-xs uppercase tracking-widest mt-6 opacity-70">
+        — Pablo Fischbein · ★★★★☆
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- COMPROMISO / DOLORES TRANSFORMADOS -->
+<section class="bg-ink text-bone px-6 md:px-12 py-20 md:py-28">
+  <div class="grid md:grid-cols-12 gap-6">
+    <div class="md:col-span-5">
+      <div class="mono text-xs uppercase tracking-widest opacity-60 mb-4">Nuestra promesa</div>
+      <h2 class="display text-4xl md:text-6xl font-extrabold leading-[0.95]">
+        Trabajamos para que cada visita sume.
+      </h2>
+    </div>
+    <div class="md:col-span-7 space-y-6 md:pt-4">
+      <div class="border-t border-bone/20 pt-6">
+        <p class="mono text-xs uppercase tracking-widest text-lime mb-2">Atención que respeta</p>
+        <p class="text-base md:text-lg leading-relaxed">Recepción capacitada para resolver tu trámite con buena onda. Si te llamamos por teléfono o vos a nosotros, te responden con el respeto que mereces.</p>
+      </div>
+      <div class="border-t border-bone/20 pt-6">
+        <p class="mono text-xs uppercase tracking-widest text-lime mb-2">Sala ordenada</p>
+        <p class="text-base md:text-lg leading-relaxed">Mancuernas, discos y agarres en su lugar. Para que cuando llegues a tu serie, encuentres lo que buscás sin dar vueltas.</p>
+      </div>
+      <div class="border-t border-bone/20 pt-6">
+        <p class="mono text-xs uppercase tracking-widest text-lime mb-2">Horarios anchos</p>
+        <p class="text-base md:text-lg leading-relaxed">Abrimos de 7 a 24 hs de lunes a viernes. Vení temprano, al mediodía o al cierre, siempre tenés lugar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATOS + MAPA -->
+<section id="contacto" class="px-6 md:px-12 py-20 md:py-32">
+  <div class="mono text-xs uppercase tracking-widest mb-6 flex items-center gap-3">
+    <span class="inline-block w-12 h-px bg-ink"></span>
+    Cómo llegar
+  </div>
+  <h2 class="display text-5xl md:text-8xl font-extrabold mb-12 leading-[0.9]">
+    Pringles 530<span class="text-rust">,</span><br>
+    <span class="italic font-semibold">San Luis Capital.</span>
+  </h2>
+
+  <div class="grid md:grid-cols-12 gap-8">
+    <div class="md:col-span-5 space-y-8">
+      <div>
+        <div class="mono text-xs uppercase tracking-widest opacity-60 mb-3">Dirección</div>
+        <p class="display text-2xl font-semibold leading-tight">Pringles 530<br>D5700 · San Luis</p>
+      </div>
+      <div>
+        <div class="mono text-xs uppercase tracking-widest opacity-60 mb-3">Teléfono</div>
+        <a href="tel:+542664423012" class="display text-2xl font-semibold hover:text-rust transition">+54 266 442-3012</a>
+      </div>
+      <div>
+        <div class="mono text-xs uppercase tracking-widest opacity-60 mb-3">Horarios</div>
+        <ul class="mono text-sm space-y-1.5">
+          <li class="flex justify-between border-b border-ink/15 pb-1.5"><span>Lunes</span><span>07:00 — 24:00</span></li>
+          <li class="flex justify-between border-b border-ink/15 pb-1.5"><span>Martes</span><span>07:00 — 24:00</span></li>
+          <li class="flex justify-between border-b border-ink/15 pb-1.5"><span>Miércoles</span><span>07:00 — 24:00</span></li>
+          <li class="flex justify-between border-b border-ink/15 pb-1.5"><span>Jueves</span><span>07:00 — 24:00</span></li>
+          <li class="flex justify-between border-b border-ink/15 pb-1.5"><span>Viernes</span><span>07:00 — 24:00</span></li>
+          <li class="flex justify-between border-b border-ink/15 pb-1.5"><span>Sábado</span><span>10:00 — 22:00</span></li>
+          <li class="flex justify-between"><span>Domingo</span><span class="opacity-50">Cerrado</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="md:col-span-7">
+      <div class="border-2 border-ink overflow-hidden h-[400px] md:h-[520px]">
+        <iframe
+          src="https://www.google.com/maps?q=-33.3016275,-66.3310302&z=16&output=embed"
+          width="100%" height="100%"
+          style="border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación Complejo Deportivo Toribio Mendoza"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA WHATSAPP -->
+<section class="bg-rust text-bone px-6 md:px-12 py-24 md:py-40">
+  <div class="grid md:grid-cols-12 gap-8 items-end">
+    <div class="md:col-span-9">
+      <div class="mono text-xs uppercase tracking-widest mb-6 opacity-80">Escribinos por WhatsApp</div>
+      <h2 class="display text-5xl md:text-[8rem] font-extrabold leading-[0.85]">
+        Vení a entrenar <span class="italic font-semibold">esta semana</span>.
+      </h2>
+      <p class="mt-8 text-lg md:text-xl max-w-2xl leading-relaxed opacity-90">
+        Te contamos cómo funcionan los planes, los horarios de pileta y todo lo que necesites saber para empezar.
+      </p>
+    </div>
+    <div class="md:col-span-3 md:text-right">
+      <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Complejo%20Deportivo%20Toribio%20Mendoza%20y%20quiero%20charlar." class="inline-block bg-bone text-ink px-8 py-6 mono text-sm uppercase tracking-widest font-bold hover:bg-lime transition">
+        Escribir ahora →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-bone px-6 md:px-12 py-12">
+  <div class="grid md:grid-cols-12 gap-6 items-center">
+    <div class="md:col-span-6">
+      <div class="display text-2xl font-semibold">Complejo Deportivo Toribio Mendoza</div>
+      <div class="mono text-xs uppercase tracking-widest opacity-60 mt-2">Gimnasio · Pileta · Funcional · San Luis Capital</div>
+    </div>
+    <div class="md:col-span-6 md:text-right mono text-xs uppercase tracking-widest">
+      <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Complejo%20Deportivo%20Toribio%20Mendoza%20y%20quiero%20charlar." class="hover:text-lime transition">
+        Una propuesta de Rodrigo Domínguez · agendá una llamada →
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

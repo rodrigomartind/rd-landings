@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arenas de La Punta — Despertate con las sierras en tu ventana</title>
+<meta name="description" content="Hotel familiar en Ciudad de La Punta, San Luis. Piscina, sauna, parque para chicos y vistas panorámicas a las sierras centrales. A pocos km de los ríos más lindos de la provincia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Fraunces', 'serif'],
+        sans: ['Manrope', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
+      colors: {
+        cream: '#F4EDE0',
+        bone: '#EAE0CC',
+        clay: '#B5512C',
+        clayDark: '#8C3B1E',
+        forest: '#2B3D2C',
+        forestDeep: '#1A2A1B',
+        ink: '#1F1A14',
+        sand: '#D9C7A0',
+      }
+    }
+  }
+}
+</script>
+<style>
+  body { background-color: #F4EDE0; color: #1F1A14; }
+  .text-balance { text-wrap: balance; }
+  .marquee-line { letter-spacing: -0.04em; }
+  .underline-wavy { text-decoration: underline; text-decoration-style: wavy; text-decoration-color: #B5512C; text-underline-offset: 6px; }
+  .grain { background-image: radial-gradient(circle at 1px 1px, rgba(31,26,20,0.05) 1px, transparent 0); background-size: 4px 4px; }
+  .hero-mountain {
+    background: linear-gradient(180deg, transparent 0%, transparent 55%, #2B3D2C 55%, #2B3D2C 100%);
+  }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .plus-icon { transform: rotate(45deg); }
+  .plus-icon { transition: transform 0.3s ease; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #B5512C; outline-offset: 4px; }
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- Top bar -->
+<div class="bg-forestDeep text-cream/80 font-mono text-[11px] tracking-widest uppercase">
+  <div class="max-w-7xl mx-auto px-5 py-2.5 flex items-center justify-between">
+    <span>San Luis · 33°11'S 66°20'O</span>
+    <span class="hidden sm:inline">★ 4.2 / 2.018 opiniones</span>
+    <span>El. 750 m</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 pt-10 md:pt-16">
+    <div class="flex items-center justify-between mb-12 md:mb-20">
+      <div class="font-display font-semibold text-xl tracking-tight">Arenas <span class="text-clay italic font-normal">de La Punta</span></div>
+      <nav class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#lugar" class="hover:text-clay">El lugar</a>
+        <a href="#plan" class="hover:text-clay">Plan familiar</a>
+        <a href="#opiniones" class="hover:text-clay">Opiniones</a>
+        <a href="#visitar" class="hover:text-clay">Visitarnos</a>
+      </nav>
+      <a href="#whatsapp" class="text-sm font-medium border-b-2 border-clay pb-1 hover:text-clay">Reservar →</a>
+    </div>
+
+    <div class="grid md:grid-cols-12 gap-6 items-end">
+      <div class="md:col-span-8">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-clay mb-6">— Hotel · Ciudad de La Punta</p>
+        <h1 class="font-display font-light text-[clamp(2.8rem,9vw,8rem)] leading-[0.92] tracking-[-0.03em] text-balance">
+          Despertate con las<br>
+          <span class="italic font-normal">sierras</span> en tu ventana.
+        </h1>
+      </div>
+      <div class="md:col-span-4 md:pb-6">
+        <p class="text-base md:text-lg leading-relaxed text-ink/80 max-w-sm">
+          Un hotel familiar al pie de las sierras centrales de San Luis. Pileta, sauna, parque y silencio del bueno — el que sólo hace el paisaje.
+        </p>
+        <a href="#whatsapp" class="inline-block mt-6 bg-clay text-cream px-7 py-3.5 font-medium hover:bg-clayDark transition">
+          Consultar disponibilidad
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mountain silhouette type -->
+  <div class="mt-16 md:mt-24 overflow-hidden">
+    <div class="font-display italic text-clay/15 text-[clamp(5rem,18vw,16rem)] leading-none whitespace-nowrap marquee-line -mb-6 md:-mb-12 px-5">
+      las cañadas · las sierras
+    </div>
+  </div>
+</header>
+
+<!-- TRUST STRIP -->
+<section class="border-y border-ink/15 bg-bone/60">
+  <div class="max-w-7xl mx-auto px-5 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 items-center">
+    <div>
+      <div class="font-display text-4xl md:text-5xl font-semibold text-forest">4.2<span class="text-clay">★</span></div>
+      <div class="font-mono text-[11px] uppercase tracking-widest text-ink/60 mt-1">2.018 opiniones · Google</div>
+    </div>
+    <div class="md:border-l border-ink/15 md:pl-6">
+      <div class="font-display text-4xl md:text-5xl font-semibold">+2.000</div>
+      <div class="font-mono text-[11px] uppercase tracking-widest text-ink/60 mt-1">familias ya pasaron</div>
+    </div>
+    <div class="md:border-l border-ink/15 md:pl-6">
+      <div class="font-display text-4xl md:text-5xl font-semibold">06</div>
+      <div class="font-mono text-[11px] uppercase tracking-widest text-ink/60 mt-1">km al centro de La Punta</div>
+    </div>
+    <div class="md:border-l border-ink/15 md:pl-6">
+      <div class="font-display text-4xl md:text-5xl font-semibold">∞</div>
+      <div class="font-mono text-[11px] uppercase tracking-widest text-ink/60 mt-1">vista a las sierras</div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE NOS ELIGEN -->
+<section id="lugar" class="py-20 md:py-32">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-4">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-clay mb-4">01 — el lugar</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Lo que más se llevan los que vienen.</h2>
+        <p class="mt-6 text-ink/70 leading-relaxed">No te lo decimos nosotros. Lo dicen las <span class="underline-wavy">2.018 reseñas</span> que la gente nos dejó después de quedarse.</p>
+      </div>
+
+      <div class="md:col-span-8 md:pl-12 md:border-l border-ink/15">
+        <ul class="divide-y divide-ink/15">
+          <li class="py-7 flex gap-6 items-start">
+            <span class="font-mono text-clay text-sm pt-1.5">01</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl font-semibold leading-tight">Vistas <em class="font-normal">maravillosas</em> a las sierras centrales.</h3>
+              <p class="mt-3 text-ink/70 leading-relaxed">Es la palabra exacta que usan los huéspedes. El paisaje hace el trabajo desde la ventana, desde el parque y desde la pileta.</p>
+            </div>
+          </li>
+          <li class="py-7 flex gap-6 items-start">
+            <span class="font-mono text-clay text-sm pt-1.5">02</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl font-semibold leading-tight">Pileta y sauna para soltar el cansancio.</h3>
+              <p class="mt-3 text-ink/70 leading-relaxed">Dos lujos chicos que cambian un fin de semana. Para flotar un rato y olvidarse de la semana.</p>
+            </div>
+          </li>
+          <li class="py-7 flex gap-6 items-start">
+            <span class="font-mono text-clay text-sm pt-1.5">03</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl font-semibold leading-tight">Parque y juegos para los chicos.</h3>
+              <p class="mt-3 text-ink/70 leading-relaxed">Mientras ellos corren y se cansan tranquilos, ustedes respiran. El plan familiar real, no el de las fotos retocadas.</p>
+            </div>
+          </li>
+          <li class="py-7 flex gap-6 items-start">
+            <span class="font-mono text-clay text-sm pt-1.5">04</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl font-semibold leading-tight">A pocos kilómetros de los ríos más lindos.</h3>
+              <p class="mt-3 text-ink/70 leading-relaxed">Base estratégica para conocer San Luis: ríos emblemáticos de la provincia a un rato corto en auto.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<section class="bg-forest text-cream py-24 md:py-36 grain">
+  <div class="max-w-5xl mx-auto px-5">
+    <p class="font-mono text-xs uppercase tracking-[0.2em] text-sand mb-10">— una reseña, palabra por palabra</p>
+    <blockquote class="font-display italic font-light text-3xl md:text-5xl leading-[1.15] text-balance">
+      "Excelente hotel con un <span class="not-italic font-normal text-sand">hermoso parque</span> y entretenimiento para los chicos. Una <span class="not-italic font-normal text-sand">vista maravillosa</span> de las sierras centrales de San Luis."
+    </blockquote>
+    <footer class="mt-10 font-mono text-xs uppercase tracking-widest text-cream/70">
+      Pablo Gonzalez · ★★★★★ · Google Reviews
+    </footer>
+  </div>
+</section>
+
+<!-- PLAN FAMILIAR -->
+<section id="plan" class="py-20 md:py-32">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="md:flex md:items-end md:justify-between mb-14">
+      <div class="max-w-2xl">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-clay mb-4">02 — el plan</p>
+        <h2 class="font-display text-4xl md:text-6xl leading-[1.02] tracking-tight">Piscina, sauna y parque.<br><em class="text-clay">A minutos de La Punta.</em></h2>
+      </div>
+      <p class="mt-6 md:mt-0 md:max-w-xs text-ink/70">Un solo lugar. Un solo viaje en auto. Todo lo que la familia necesita para una escapada corta de verdad.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-px bg-ink/15 border border-ink/15">
+      <article class="bg-cream p-8 md:p-10">
+        <div class="font-mono text-xs uppercase tracking-widest text-clay">— amenity</div>
+        <h3 class="font-display text-3xl md:text-4xl font-semibold mt-3">Piscina</h3>
+        <p class="mt-4 text-ink/70 leading-relaxed">Para flotar mirando las sierras. Espacio amplio, ideal para que los chicos se queden el día entero.</p>
+      </article>
+      <article class="bg-cream p-8 md:p-10">
+        <div class="font-mono text-xs uppercase tracking-widest text-clay">— amenity</div>
+        <h3 class="font-display text-3xl md:text-4xl font-semibold mt-3">Sauna</h3>
+        <p class="mt-4 text-ink/70 leading-relaxed">Para los que llegan con la espalda dura del viaje y se quieren ir como nuevos.</p>
+      </article>
+      <article class="bg-cream p-8 md:p-10">
+        <div class="font-mono text-xs uppercase tracking-widest text-clay">— amenity</div>
+        <h3 class="font-display text-3xl md:text-4xl font-semibold mt-3">Parque & Juegos</h3>
+        <p class="mt-4 text-ink/70 leading-relaxed">Verde, sombra y entretenimiento pensado para que los chicos pidan volver.</p>
+      </article>
+    </div>
+
+    <!-- Promesa de comunicación clara -->
+    <div class="mt-16 md:mt-20 grid md:grid-cols-12 gap-8 items-center bg-bone/70 border border-ink/10 p-8 md:p-12">
+      <div class="md:col-span-2 font-display text-7xl md:text-8xl text-clay font-semibold leading-none">↳</div>
+      <div class="md:col-span-7">
+        <h3 class="font-display text-2xl md:text-3xl leading-tight">Reservá con tranquilidad: te avisamos todo desde el primer momento.</h3>
+        <p class="mt-3 text-ink/70 leading-relaxed">Horarios de pileta, de cocina, de check-in y de cierre del patio. Antes de llegar ya los tenés. Sin sorpresas, sin malentendidos.</p>
+      </div>
+      <div class="md:col-span-3 md:text-right">
+        <a href="#whatsapp" class="inline-block bg-ink text-cream px-6 py-3 font-medium hover:bg-clay transition">Pedir info completa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG TYPE BREAK -->
+<section class="overflow-hidden border-y border-ink/15 bg-bone py-12 md:py-16">
+  <div class="font-display italic text-ink text-[clamp(3rem,11vw,10rem)] leading-[0.95] tracking-tight whitespace-nowrap marquee-line px-5">
+    sierras · ríos · pileta · sauna · parque ·
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="opiniones" class="py-20 md:py-32">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="mb-16 max-w-3xl">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-clay mb-4">03 — opiniones</p>
+      <h2 class="font-display text-4xl md:text-6xl leading-[1.02] tracking-tight">Lo que dijeron <em>después</em> de quedarse.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-px bg-ink/15 border border-ink/15">
+      <article class="bg-cream p-8 md:p-12">
+        <div class="flex items-center justify-between mb-5">
+          <div class="font-mono text-clay tracking-widest text-sm">★★★★★</div>
+          <div class="font-mono text-xs uppercase text-ink/50">Reseña Google</div>
+        </div>
+        <p class="font-display text-xl md:text-2xl leading-snug text-balance">"Excelente hotel con un hermoso parque y entretenimiento para los chicos. Una vista maravillosa de las sierras centrales de San Luis. Cerca de la ciudad de La Punta y a pocos km de los ríos más emblemáticos de la provincia."</p>
+        <footer class="mt-6 pt-6 border-t border-ink/15 font-medium">Pablo Gonzalez</footer>
+      </article>
+
+      <article class="bg-cream p-8 md:p-12">
+        <div class="flex items-center justify-between mb-5">
+          <div class="font-mono text-clay tracking-widest text-sm">★★★★</div>
+          <div class="font-mono text-xs uppercase text-ink/50">Reseña Google</div>
+        </div>
+        <p class="font-display text-xl md:text-2xl leading-snug text-balance">"Hermoso hotel con piscina y sauna."</p>
+        <footer class="mt-6 pt-6 border-t border-ink/15 font-medium">Mauro Maldonado</footer>
+      </article>
+
+      <article class="bg-cream p-8 md:p-12">
+        <div class="flex items-center justify-between mb-5">
+          <div class="font-mono text-clay tracking-widest text-sm">★★★★</div>
+          <div class="font-mono text-xs uppercase text-ink/50">Reseña Google</div>
+        </div>
+        <p class="font-display text-xl md:text-2xl leading-snug text-balance">"Lugar lindo, fuimos el día de la Madre, comimos unas pizzas muy ricas, la atención es buena."</p>
+        <footer class="mt-6 pt-6 border-t border-ink/15 font-medium">Ruben Dario Lambrese</footer>
+      </article>
+
+      <article class="bg-cream p-8 md:p-12">
+        <div class="flex items-center justify-between mb-5">
+          <div class="font-mono text-clay tracking-widest text-sm">★★★★</div>
+          <div class="font-mono text-xs uppercase text-ink/50">Reseña Google</div>
+        </div>
+        <p class="font-display text-xl md:text-2xl leading-snug text-balance">"Lindo! Muy buenas vistas (...) Lo demás muy bueno."</p>
+        <footer class="mt-6 pt-6 border-t border-ink/15 font-medium">Mariano Paone</footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VISITARNOS -->
+<section id="visitar" class="bg-forestDeep text-cream py-20 md:py-32">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-5">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-sand mb-4">04 — visitarnos</p>
+        <h2 class="font-display text-4xl md:text-6xl leading-[1.02] tracking-tight font-light">Vení.<br><em class="text-sand">Te esperamos.</em></h2>
+
+        <div class="mt-12 space-y-8">
+          <div>
+            <div class="font-mono text-xs uppercase tracking-widest text-sand/70 mb-2">Dirección</div>
+            <p class="text-lg leading-relaxed">Bv. Las Cañadas 9010<br>D5710 Ciudad de La Punta<br>San Luis, Argentina</p>
+          </div>
+
+          <div>
+            <div class="font-mono text-xs uppercase tracking-widest text-sand/70 mb-2">Teléfono</div>
+            <a href="tel:+542664530810" class="text-lg hover:text-sand">+54 266 453-0810</a>
+          </div>
+
+          <div>
+            <div class="font-mono text-xs uppercase tracking-widest text-sand/70 mb-3">Patio de comidas</div>
+            <ul class="text-sm space-y-1.5 font-mono text-cream/85">
+              <li class="flex justify-between max-w-xs"><span>Lunes a Jueves</span><span class="text-sand/60">cerrado</span></li>
+              <li class="flex justify-between max-w-xs"><span>Viernes</span><span>18:00 — 02:00</span></li>
+              <li class="flex justify-between max-w-xs"><span>Sábado</span><span>18:00 — 02:00</span></li>
+              <li class="flex justify-between max-w-xs"><span>Domingo</span><span>18:00 — 02:00</span></li>
+            </ul>
+            <p class="text-xs text-cream/60 mt-3 italic">* La cocina cierra antes que el local. Te lo confirmamos al reservar.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-7">
+        <div class="border border-cream/20 overflow-hidden h-80 md:h-full min-h-[400px]">
+          <iframe
+            src="https://www.google.com/maps?q=-33.1908595,-66.3424308&hl=es&z=15&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de Arenas de La Punta"
+            class="grayscale">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA WHATSAPP -->
+<section id="whatsapp" class="py-24 md:py-40 bg-clay text-cream relative overflow-hidden">
+  <div class="absolute inset-0 grain pointer-events-none"></div>
+  <div class="max-w-5xl mx-auto px-5 relative">
+    <p class="font-mono text-xs uppercase tracking-[0.2em] text-cream/70 mb-6">— reservá tu próxima escapada</p>
+    <h2 class="font-display font-light text-[clamp(2.5rem,8vw,6.5rem)] leading-[0.95] tracking-tight text-balance">
+      Un fin de semana donde el <em class="font-normal">paisaje</em> hace el trabajo.
+    </h2>
+    <p class="mt-8 text-lg md:text-xl text-cream/85 max-w-2xl leading-relaxed">Escribinos por WhatsApp y te pasamos disponibilidad, tarifas y todos los horarios. Respondemos rápido y sin vueltas.</p>
+
+    <div class="mt-12 flex flex-col sm:flex-row gap-4">
+      <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Arenas%20de%20La%20Punta%20y%20quiero%20charlar." class="inline-flex items-center justify-center gap-3 bg-cream text-clay px-8 py-5 font-semibold text-lg hover:bg-bone transition">
+        <span>Escribinos por WhatsApp</span>
+        <span aria-hidden="true">→</span>
+      </a>
+      <a href="tel:+542664530810" class="inline-flex items-center justify-center gap-3 border border-cream/40 text-cream px-8 py-5 font-medium hover:bg-cream/10 transition">
+        Llamar al hotel
+      </a>
+    </div>
+
+    <div class="mt-10 font-mono text-xs uppercase tracking-widest text-cream/60">
+      +54 9 11 3400-0444 · respuesta dentro del día
+    </div>
+  </div>
+</section>
+
+<!-- FAQ rápida -->
+<section class="py-20 md:py-28 bg-bone">
+  <div class="max-w-4xl mx-auto px-5">
+    <p class="font-mono text-xs uppercase tracking-[0.2em] text-clay mb-4">— preguntas frecuentes</p>
+    <h2 class="font-display text-3xl md:text-5xl leading-tight tracking-tight mb-12">Antes de venir.</h2>
+
+    <div class="divide-y divide-ink/15 border-y border-ink/15">
+      <details class="group py-6">
+        <summary class="flex justify-between items-center gap-4">
+          <span class="font-display text-xl md:text-2xl">¿Cuáles son los horarios del patio de comidas y la cocina?</span>
+          <span class="plus-icon font-mono text-clay text-2xl">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed max-w-2xl">El patio funciona viernes, sábado y domingo de 18:00 a 02:00. La cocina cierra antes del cierre del local — te confirmamos los horarios exactos por WhatsApp al reservar para que organices tranqui.</p>
+      </details>
+      <details class="group py-6">
+        <summary class="flex justify-between items-center gap-4">
+          <span class="font-display text-xl md:text-2xl">¿Hay actividades para los chicos?</span>
+          <span class="plus-icon font-mono text-clay text-2xl">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed max-w-2xl">Sí. Parque verde, zona de juegos y entretenimiento pensados para familias. Es uno de los puntos que más destacan los huéspedes en sus reseñas.</p>
+      </details>
+      <details class="group py-6">
+        <summary class="flex justify-between items-center gap-4">
+          <span class="font-display text-xl md:text-2xl">¿Qué hay cerca del hotel?</span>
+          <span class="plus-icon font-mono text-clay text-2xl">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed max-w-2xl">Estamos en Ciudad de La Punta y a pocos kilómetros de los ríos más emblemáticos de la provincia. Buena base para escapadas de un día por las sierras de San Luis.</p>
+      </details>
+      <details class="group py-6">
+        <summary class="flex justify-between items-center gap-4">
+          <span class="font-display text-xl md:text-2xl">¿Cómo reservo?</span>
+          <span class="plus-icon font-mono text-clay text-2xl">+</span>
+        </summary>
+        <p class="mt-4 text-ink/70 leading-relaxed max-w-2xl">Por WhatsApp al +54 266 453-0810 o por el botón de arriba. Te respondemos con disponibilidad, tarifas y todos los detalles antes de que llegues.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-ink text-cream/80 py-14">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid md:grid-cols-3 gap-8 mb-10">
+      <div>
+        <div class="font-display text-2xl text-cream">Arenas <em class="text-clay">de La Punta</em></div>
+        <p class="mt-3 text-sm text-cream/60 max-w-xs">Hotel familiar con piscina, sauna y parque. Vistas a las sierras centrales de San Luis.</p>
+      </div>
+      <div class="text-sm space-y-2">
+        <div class="font-mono text-xs uppercase tracking-widest text-cream/50 mb-3">Visitarnos</div>
+        <p>Bv. Las Cañadas 9010, La Punta</p>
+        <p>San Luis, Argentina</p>
+        <p><a href="tel:+542664530810" class="hover:text-clay">+54 266 453-0810</a></p>
+      </div>
+      <div class="text-sm space-y-2">
+        <div class="font-mono text-xs uppercase tracking-widest text-cream/50 mb-3">Navegar</div>
+        <p><a href="#lugar" class="hover:text-clay">El lugar</a></p>
+        <p><a href="#plan" class="hover:text-clay">Plan familiar</a></p>
+        <p><a href="#opiniones" class="hover:text-clay">Opiniones</a></p>
+        <p><a href="#whatsapp" class="hover:text-clay">Reservar</a></p>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-cream/15 flex flex-col md:flex-row justify-between gap-4 text-xs font-mono uppercase tracking-widest text-cream/60">
+      <span>© Arenas de La Punta · San Luis</span>
+      <a href="#whatsapp" class="hover:text-clay">Una propuesta de Rodrigo Domínguez · agendá una llamada →</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

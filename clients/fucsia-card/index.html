@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fucsia Card — Estética y gimnasio en el centro de San Luis</title>
+<meta name="description" content="Spa, estética y gimnasio en San Luis. Pedernera 454. Aparatología nueva, instructores profesionales, turnos respetados. Planes mensuales accesibles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,300;1,9..144,600&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1a0a14',
+          bone: '#f6efe6',
+          cream: '#efe5d6',
+          fucsia: '#c4255f',
+          fucsiaDeep: '#7a1437',
+          blush: '#e8b4c2',
+          sage: '#3f4d3a'
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          sans: ['"DM Sans"', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'DM Sans', sans-serif; background: #f6efe6; color: #1a0a14; }
+  .display { font-family: 'Fraunces', serif; font-optical-sizing: auto; }
+  .rule { height: 1px; background: currentColor; opacity: 0.2; }
+  .underline-fucsia { background-image: linear-gradient(transparent 65%, #e8b4c2 65%); background-repeat: no-repeat; }
+  .marquee-track { animation: marquee 38s linear infinite; }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .bleed-r { margin-right: -3vw; }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #c4255f; outline-offset: 4px; }
+  .star { color: #c4255f; }
+  .num-huge { font-feature-settings: "ss01"; line-height: 0.85; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- TOP BAR -->
+<div class="bg-ink text-bone text-xs font-mono">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3">
+    <span class="tracking-widest uppercase">Pedernera 454 · San Luis Capital</span>
+    <span class="hidden sm:block opacity-70">Lun a Vie 9–21 · Sáb 9–17</span>
+    <a href="tel:+542664205673" class="hover:text-blush transition">+54 266 420-5673</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="border-b border-ink/15">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-5 flex items-center justify-between">
+    <a href="#" class="display text-2xl tracking-tight font-semibold">Fucsia<span class="text-fucsia">.</span>Card</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm">
+      <a href="#estetica" class="hover:text-fucsia transition">Estética</a>
+      <a href="#gym" class="hover:text-fucsia transition">Gimnasio</a>
+      <a href="#asi-trabajamos" class="hover:text-fucsia transition">Cómo trabajamos</a>
+      <a href="#visitanos" class="hover:text-fucsia transition">Visitanos</a>
+    </nav>
+    <a href="#cta" class="text-sm bg-ink text-bone px-5 py-2.5 hover:bg-fucsia transition">Reservar turno</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8 pt-12 sm:pt-20 pb-14 sm:pb-24">
+    <div class="grid lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-8">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-fucsiaDeep mb-6">— Spa & Gym · San Luis · desde el centro de Pedernera</p>
+        <h1 class="display font-light text-5xl sm:text-7xl lg:text-[8.5rem] leading-[0.92] tracking-tight">
+          Tu rutina<br>
+          de <em class="italic font-normal text-fucsia">cuidarte</em>,<br>
+          <span class="underline-fucsia">en un solo lugar.</span>
+        </h1>
+      </div>
+      <div class="lg:col-span-4 lg:pl-6">
+        <div class="rule mb-6"></div>
+        <p class="text-lg sm:text-xl leading-relaxed max-w-md">
+          Estética profesional y gimnasio bajo el mismo techo. Aparatología nueva, instructores que saben lo que hacen, y un turno que sí se respeta.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#cta" class="inline-block bg-fucsia text-bone px-6 py-3.5 text-sm font-medium hover:bg-fucsiaDeep transition">Reservar mi turno →</a>
+          <a href="#asi-trabajamos" class="inline-block border border-ink/40 px-6 py-3.5 text-sm hover:bg-ink hover:text-bone transition">Ver cómo trabajamos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST BAR -->
+  <div class="bg-ink text-bone">
+    <div class="max-w-[1400px] mx-auto px-5 sm:px-8 py-6 grid sm:grid-cols-3 gap-5 sm:gap-10 items-center">
+      <div class="flex items-center gap-3">
+        <span class="display text-3xl">4.4</span>
+        <div>
+          <div class="text-blush text-sm tracking-wider">★★★★<span class="opacity-50">★</span></div>
+          <p class="text-xs opacity-70">en Google · 150 opiniones reales</p>
+        </div>
+      </div>
+      <div class="text-sm sm:border-l sm:border-r sm:border-bone/20 sm:px-8">
+        <span class="block font-mono text-blush text-xs uppercase tracking-widest mb-1">Promedio de espera</span>
+        <span class="display text-xl">menos de 5 minutos</span>
+      </div>
+      <div class="text-sm">
+        <span class="block font-mono text-blush text-xs uppercase tracking-widest mb-1">Equipamiento</span>
+        <span class="display text-xl">aparatos nuevos · estética + gym</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section aria-hidden="true" class="bg-bone border-y border-ink/15 overflow-hidden py-5">
+  <div class="flex marquee-track whitespace-nowrap display text-3xl sm:text-4xl text-ink/80">
+    <div class="flex gap-12 pr-12 items-center">
+      <span>Aparatología nueva</span><span class="text-fucsia">✦</span>
+      <span class="italic">turnos respetados</span><span class="text-fucsia">✦</span>
+      <span>profes profesionales</span><span class="text-fucsia">✦</span>
+      <span class="italic">precio accesible</span><span class="text-fucsia">✦</span>
+      <span>limpieza impecable</span><span class="text-fucsia">✦</span>
+      <span class="italic">duchas con todo</span><span class="text-fucsia">✦</span>
+    </div>
+    <div class="flex gap-12 pr-12 items-center" aria-hidden="true">
+      <span>Aparatología nueva</span><span class="text-fucsia">✦</span>
+      <span class="italic">turnos respetados</span><span class="text-fucsia">✦</span>
+      <span>profes profesionales</span><span class="text-fucsia">✦</span>
+      <span class="italic">precio accesible</span><span class="text-fucsia">✦</span>
+      <span>limpieza impecable</span><span class="text-fucsia">✦</span>
+      <span class="italic">duchas con todo</span><span class="text-fucsia">✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- LO QUE MÁS VALORAN -->
+<section class="py-20 sm:py-28">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 mb-14">
+      <div class="lg:col-span-5">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-fucsiaDeep mb-4">— 01 / Lo que más valoran</p>
+        <h2 class="display text-4xl sm:text-5xl lg:text-6xl leading-[1] tracking-tight">
+          Cinco cosas que <em class="italic">repiten</em> nuestras clientas.
+        </h2>
+      </div>
+      <div class="lg:col-span-6 lg:col-start-7 self-end">
+        <p class="text-lg leading-relaxed">No las inventamos: salen de las opiniones que la gente dejó en Google. Las leímos todas.</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-y-12 md:gap-x-16">
+      <div class="border-t border-ink/30 pt-6">
+        <span class="display text-7xl text-fucsia num-huge">01</span>
+        <h3 class="display text-2xl mt-4 mb-2">Los profes son posta.</h3>
+        <p class="text-ink/75">Profesionales reales, atentos a cómo entrenás. La razón principal por la que la gente vuelve, según las reseñas.</p>
+      </div>
+      <div class="border-t border-ink/30 pt-6">
+        <span class="display text-7xl text-fucsia num-huge">02</span>
+        <h3 class="display text-2xl mt-4 mb-2">Te explicamos antes de empezar.</h3>
+        <p class="text-ink/75">En estética, ningún aparato se enciende sin que sepas qué hace y cómo. Tu seguridad va primero.</p>
+      </div>
+      <div class="border-t border-ink/30 pt-6">
+        <span class="display text-7xl text-fucsia num-huge">03</span>
+        <h3 class="display text-2xl mt-4 mb-2">Llegás, te atienden.</h3>
+        <p class="text-ink/75">Sistema de turnos que de verdad funciona. Casi nadie espera más de cinco minutos.</p>
+      </div>
+      <div class="border-t border-ink/30 pt-6">
+        <span class="display text-7xl text-fucsia num-huge">04</span>
+        <h3 class="display text-2xl mt-4 mb-2">Limpieza y orden, todos los días.</h3>
+        <p class="text-ink/75">Equipos nuevos, baños con duchas, ambiente prolijo. Detalle mencionado en reseña tras reseña.</p>
+      </div>
+      <div class="border-t border-ink/30 pt-6 md:col-span-2 md:max-w-2xl">
+        <span class="display text-7xl text-fucsia num-huge">05</span>
+        <h3 class="display text-2xl mt-4 mb-2">Planes mensuales que cierran.</h3>
+        <p class="text-ink/75">Promociones reales y precios accesibles, especialmente en estética. Pensados para que vengas seguido, no una vez.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESTÉTICA -->
+<section id="estetica" class="bg-cream py-20 sm:py-28">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 mb-12">
+      <div class="lg:col-span-7">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-fucsiaDeep mb-4">— 02 / Estética</p>
+        <h2 class="display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
+          Tratamientos con <em class="italic text-fucsia">aparatología nueva</em>, no con promesas viejas.
+        </h2>
+      </div>
+      <div class="lg:col-span-4 lg:col-start-9 self-end">
+        <p class="text-lg leading-relaxed">Cada sesión empieza con una explicación clara: qué te vamos a hacer, cuánto dura, qué vas a sentir. Sin sorpresas.</p>
+      </div>
+    </div>
+
+    <div class="border-t border-ink/30">
+      <article class="grid md:grid-cols-12 gap-6 py-8 border-b border-ink/15 items-baseline">
+        <span class="md:col-span-1 font-mono text-xs text-fucsiaDeep">A1</span>
+        <h3 class="display text-3xl md:col-span-4">Aparatología corporal</h3>
+        <p class="md:col-span-5 text-ink/75">Tratamientos reductores y reafirmantes con equipos modernos, mantenidos al día.</p>
+        <span class="md:col-span-2 font-mono text-sm md:text-right">Plan mensual</span>
+      </article>
+      <article class="grid md:grid-cols-12 gap-6 py-8 border-b border-ink/15 items-baseline">
+        <span class="md:col-span-1 font-mono text-xs text-fucsiaDeep">A2</span>
+        <h3 class="display text-3xl md:col-span-4">Sesiones faciales</h3>
+        <p class="md:col-span-5 text-ink/75">Limpieza profunda, hidratación, cuidado de la piel. Con personal que escucha lo que necesitás.</p>
+        <span class="md:col-span-2 font-mono text-sm md:text-right">Sesión / Plan</span>
+      </article>
+      <article class="grid md:grid-cols-12 gap-6 py-8 border-b border-ink/15 items-baseline">
+        <span class="md:col-span-1 font-mono text-xs text-fucsiaDeep">A3</span>
+        <h3 class="display text-3xl md:col-span-4">Combos estética + gym</h3>
+        <p class="md:col-span-5 text-ink/75">El diferencial real: entrenás y te tratás en el mismo lugar, en la misma visita.</p>
+        <span class="md:col-span-2 font-mono text-sm md:text-right">Promo mensual</span>
+      </article>
+    </div>
+
+    <div class="mt-12 flex flex-wrap items-center gap-4">
+      <a href="#cta" class="inline-block bg-ink text-bone px-6 py-3.5 text-sm hover:bg-fucsia transition">Consultar tratamientos</a>
+      <span class="font-mono text-xs text-ink/60">Las promociones cambian — preguntá por la del mes.</span>
+    </div>
+  </div>
+</section>
+
+<!-- GIMNASIO -->
+<section id="gym" class="bg-ink text-bone py-20 sm:py-28 relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-7">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-blush mb-4">— 03 / Gimnasio</p>
+        <h2 class="display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
+          El gimnasio<br>
+          que <em class="italic text-blush">sí</em> tiene<br>
+          profesores.
+        </h2>
+        <p class="text-lg leading-relaxed mt-8 max-w-xl text-bone/80">
+          No te recibe una recepcionista y desaparece. Te recibe un profe que te corrige la postura, te arma el plan y te acompaña la rutina. Es lo que más se nombra en las reseñas — y es la razón por la que la gente vuelve.
+        </p>
+      </div>
+
+      <div class="lg:col-span-4 lg:col-start-9 grid grid-cols-2 gap-6 self-center">
+        <div class="border-t border-bone/30 pt-4">
+          <span class="display text-5xl num-huge text-blush">+150</span>
+          <p class="text-xs font-mono mt-2 uppercase tracking-widest text-bone/60">Reseñas reales</p>
+        </div>
+        <div class="border-t border-bone/30 pt-4">
+          <span class="display text-5xl num-huge text-blush">&lt;5'</span>
+          <p class="text-xs font-mono mt-2 uppercase tracking-widest text-bone/60">De espera</p>
+        </div>
+        <div class="border-t border-bone/30 pt-4">
+          <span class="display text-5xl num-huge text-blush">2en1</span>
+          <p class="text-xs font-mono mt-2 uppercase tracking-widest text-bone/60">Gym + estética</p>
+        </div>
+        <div class="border-t border-bone/30 pt-4">
+          <span class="display text-5xl num-huge text-blush">100%</span>
+          <p class="text-xs font-mono mt-2 uppercase tracking-widest text-bone/60">Equipos al día</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-3 gap-8 border-t border-bone/20 pt-10">
+      <div>
+        <h3 class="display text-2xl mb-2">Equipos nuevos.</h3>
+        <p class="text-bone/70 text-sm">Mantenidos, limpios y listos para usar. Sin máquinas rotas con un cartelito.</p>
+      </div>
+      <div>
+        <h3 class="display text-2xl mb-2">Baños con ducha.</h3>
+        <p class="text-bone/70 text-sm">Para que entres directo del entrenamiento al resto del día.</p>
+      </div>
+      <div>
+        <h3 class="display text-2xl mb-2">Planes que conviene.</h3>
+        <p class="text-bone/70 text-sm">Mensuales con buenos precios, especialmente si combinás con estética.</p>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <a href="#cta" class="inline-block bg-fucsia text-bone px-6 py-3.5 text-sm hover:bg-blush hover:text-ink transition">Quiero arrancar →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ASÍ TRABAJAMOS — counters de pains -->
+<section id="asi-trabajamos" class="py-20 sm:py-28">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 mb-14">
+      <div class="lg:col-span-7">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-fucsiaDeep mb-4">— 04 / Cómo trabajamos</p>
+        <h2 class="display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
+          <em class="italic">Cuatro</em> reglas que<br> nos importan.
+        </h2>
+      </div>
+      <div class="lg:col-span-5 self-end">
+        <p class="text-lg leading-relaxed">Las escribimos porque las cumplimos — y porque sabemos que en este rubro muchas veces no se cumplen.</p>
+      </div>
+    </div>
+
+    <div class="space-y-0">
+      <div class="grid md:grid-cols-12 gap-6 border-t border-ink/30 py-8">
+        <span class="md:col-span-1 font-mono text-xs text-fucsiaDeep">→ 01</span>
+        <h3 class="display text-3xl sm:text-4xl md:col-span-7 leading-tight">Si decimos 15:00, es 15:00.</h3>
+        <p class="md:col-span-4 text-ink/75">Tu turno se respeta. Y si pasa cualquier cosa, te avisamos antes — y te buscamos otro horario que te sirva.</p>
+      </div>
+      <div class="grid md:grid-cols-12 gap-6 border-t border-ink/30 py-8">
+        <span class="md:col-span-1 font-mono text-xs text-fucsiaDeep">→ 02</span>
+        <h3 class="display text-3xl sm:text-4xl md:col-span-7 leading-tight">Las condiciones, claras desde el día uno.</h3>
+        <p class="md:col-span-4 text-ink/75">Qué incluye tu plan, cuántas sesiones, cómo se reprograma. Por escrito y sin letra chica.</p>
+      </div>
+      <div class="grid md:grid-cols-12 gap-6 border-t border-ink/30 py-8">
+        <span class="md:col-span-1 font-mono text-xs text-fucsiaDeep">→ 03</span>
+        <h3 class="display text-3xl sm:text-4xl md:col-span-7 leading-tight">Antes del aparato, la explicación.</h3>
+        <p class="md:col-span-4 text-ink/75">No prendemos nada hasta que sepas qué te vamos a hacer y por qué. Tu cuerpo, tu información.</p>
+      </div>
+      <div class="grid md:grid-cols-12 gap-6 border-t border-b border-ink/30 py-8">
+        <span class="md:col-span-1 font-mono text-xs text-fucsiaDeep">→ 04</span>
+        <h3 class="display text-3xl sm:text-4xl md:col-span-7 leading-tight">Sábados también te esperamos.</h3>
+        <p class="md:col-span-4 text-ink/75">Abrimos los sábados de 9 a 17 — para que la semana laboral no te coma la rutina de cuidarte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="bg-bone py-20 sm:py-28 border-y border-ink/15">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+    <p class="font-mono text-xs uppercase tracking-[0.25em] text-fucsiaDeep mb-4">— 05 / Lo que dicen</p>
+    <h2 class="display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] tracking-tight max-w-4xl mb-16">
+      Reseñas <em class="italic">verdaderas</em>, copiadas y pegadas de Google.
+    </h2>
+
+    <div class="grid lg:grid-cols-12 gap-10">
+      <figure class="lg:col-span-7 lg:col-start-1 border-t border-ink pt-6">
+        <blockquote class="display text-3xl sm:text-4xl lg:text-5xl leading-[1.15] italic font-light">
+          "El lugar es muy <span class="not-italic underline-fucsia">limpio y ordenado</span>. La atención es muy buena por parte de las chicas, siempre muy atentas, y cuidadosas al momento de usar algún aparato, explican el procedimiento. <span class="text-fucsia not-italic">No esperé ni 5 minutos para mi sesión.</span>"
+        </blockquote>
+        <figcaption class="mt-6 font-mono text-sm flex items-center gap-3">
+          <span class="star">★★★★★</span> <span class="opacity-70">— Belén Ceriani · reseña en Google</span>
+        </figcaption>
+      </figure>
+
+      <div class="lg:col-span-5 lg:col-start-8 space-y-10">
+        <figure class="border-t border-ink/40 pt-5">
+          <blockquote class="text-lg leading-relaxed">
+            "Excelente atención, los aparatos son nuevos y están limpios, tanto de la estética como del gimnasio. Ambiente agradable, se respetan los horarios de los turnos. Buenas promociones y mejor precio en planes mensuales."
+          </blockquote>
+          <figcaption class="mt-3 font-mono text-xs">
+            <span class="star">★★★★★</span> <span class="opacity-70">— Ivana Flores</span>
+          </figcaption>
+        </figure>
+        <figure class="border-t border-ink/40 pt-5">
+          <blockquote class="text-lg leading-relaxed">
+            "La calidad de las instalaciones, de los equipos de trabajo, los baños que incluyen duchas y la atención de los profesores, hace que lo otro no importe."
+          </blockquote>
+          <figcaption class="mt-3 font-mono text-xs">
+            <span class="star">★★★★★</span> <span class="opacity-70">— Alejandro Israel Morales</span>
+          </figcaption>
+        </figure>
+        <figure class="border-t border-ink/40 pt-5">
+          <blockquote class="text-lg leading-relaxed">
+            "Tiene un muy buen gimnasio, los profes son bastante profesionales. Y para las mujeres estética, bastante accesible."
+          </blockquote>
+          <figcaption class="mt-3 font-mono text-xs">
+            <span class="star">★★★★</span><span class="opacity-30">★</span> <span class="opacity-70">— Martu El 04</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISITANOS -->
+<section id="visitanos" class="py-20 sm:py-28">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-fucsiaDeep mb-4">— 06 / Visitanos</p>
+        <h2 class="display text-5xl sm:text-6xl leading-[0.95] tracking-tight mb-10">
+          En el corazón de <em class="italic">San Luis</em>.
+        </h2>
+
+        <div class="space-y-6 text-lg">
+          <div class="border-t border-ink/30 pt-4">
+            <p class="font-mono text-xs uppercase tracking-widest text-ink/60 mb-1">Dirección</p>
+            <p>C. Pedernera 454<br>D5702 · San Luis Capital</p>
+          </div>
+          <div class="border-t border-ink/30 pt-4">
+            <p class="font-mono text-xs uppercase tracking-widest text-ink/60 mb-1">Teléfono</p>
+            <a href="tel:+542664205673" class="hover:text-fucsia transition">+54 266 420-5673</a>
+          </div>
+          <div class="border-t border-ink/30 pt-4">
+            <p class="font-mono text-xs uppercase tracking-widest text-ink/60 mb-2">Horarios</p>
+            <ul class="space-y-1 text-base">
+              <li class="flex justify-between max-w-xs"><span>Lunes</span><span>9:00 — 21:00</span></li>
+              <li class="flex justify-between max-w-xs"><span>Martes</span><span>9:00 — 21:00</span></li>
+              <li class="flex justify-between max-w-xs"><span>Miércoles</span><span>9:00 — 21:00</span></li>
+              <li class="flex justify-between max-w-xs"><span>Jueves</span><span>9:00 — 21:00</span></li>
+              <li class="flex justify-between max-w-xs"><span>Viernes</span><span>9:00 — 21:00</span></li>
+              <li class="flex justify-between max-w-xs text-fucsia"><span>Sábado</span><span>9:00 — 17:00</span></li>
+              <li class="flex justify-between max-w-xs opacity-50"><span>Domingo</span><span>Cerrado</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="border border-ink/20 h-full min-h-[400px] lg:min-h-[600px] overflow-hidden">
+          <iframe
+            title="Ubicación de Fucsia Card en San Luis"
+            src="https://www.google.com/maps?q=-33.299363,-66.330622&hl=es&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0; min-height:400px; filter: grayscale(0.3) contrast(1.05);"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="bg-fucsia text-bone py-20 sm:py-28 relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-8">
+        <p class="font-mono text-xs uppercase tracking-[0.25em] text-blush mb-6">— Reservá tu turno</p>
+        <h2 class="display text-5xl sm:text-7xl lg:text-8xl leading-[0.92] tracking-tight">
+          Empezá esta<br>
+          semana. <em class="italic">Sin vueltas,</em><br>
+          sin esperas.
+        </h2>
+        <p class="text-xl mt-8 max-w-2xl text-bone/90">
+          Escribinos por WhatsApp y te confirmamos un horario que te sirva. Te explicamos los planes, los combos y todo lo que necesites saber antes de venir.
+        </p>
+      </div>
+      <div class="lg:col-span-4 lg:text-right space-y-4">
+        <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo Domínguez%21%20Vi%20la%20landing%20que%20armaron%20para%20Fucsia%20Card%20y%20quiero%20charlar." class="block bg-bone text-fucsia px-6 py-5 text-lg font-medium hover:bg-ink hover:text-bone transition display">
+          Reservar por WhatsApp →
+        </a>
+        <a href="tel:+542664205673" class="block border border-bone/50 px-6 py-4 text-base hover:bg-ink hover:border-ink transition">
+          O llamanos: 266 420-5673
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-bone py-12">
+  <div class="max-w-[1400px] mx-auto px-5 sm:px-8">
+    <div class="grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <p class="display text-2xl">Fucsia<span class="text-fucsia">.</span>Card</p>
+        <p class="text-sm text-bone/60 mt-1">Estética y gimnasio · San Luis Capital · desde Pedernera 454</p>
+      </div>
+      <div class="md:text-right">
+        <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo Domínguez%21%20Vi%20la%20landing%20que%20armaron%20para%20Fucsia%20Card%20y%20quiero%20charlar." class="text-sm hover:text-blush transition border-b border-bone/30 hover:border-blush">
+          Una propuesta de Rodrigo Domínguez · agendá una llamada
+        </a>
+      </div>
+    </div>
+    <div class="mt-8 pt-6 border-t border-bone/15 flex flex-wrap justify-between gap-3 text-xs font-mono text-bone/50">
+      <span>spa san luis · gimnasio estética · aparatología pedernera</span>
+      <span>© Fucsia Card</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

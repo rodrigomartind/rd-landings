@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fabyana y Andrés — Coloristas y estilistas en San Luis</title>
+<meta name="description" content="Peluquería unisex en San Luis capital. Coloración profesional, cortes y cambios de look donde te escuchamos de verdad. Junín 580.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#f3ecdf',
+          paper: '#ebe2d0',
+          ink: '#1c1814',
+          rust: '#c75c3c',
+          rustdark: '#9c4127',
+          olive: '#5a5b3a'
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          sans: ['Manrope', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', sans-serif; background: #f3ecdf; color: #1c1814; }
+  .display { font-family: 'Fraunces', serif; font-optical-sizing: auto; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .underline-rust { text-decoration: underline; text-decoration-color: #c75c3c; text-decoration-thickness: 3px; text-underline-offset: 6px; }
+  .grain {
+    background-image: radial-gradient(rgba(28,24,20,0.04) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+  .marquee { animation: marquee 38s linear infinite; }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid #c75c3c; outline-offset: 4px; border-radius: 2px;
+  }
+  .ticker-item::after {
+    content: "✶";
+    margin: 0 2.5rem;
+    color: #c75c3c;
+  }
+</style>
+</head>
+<body class="grain antialiased">
+
+<!-- TOP BAR -->
+<div class="border-b border-ink/15">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between text-xs sm:text-sm">
+    <span class="mono uppercase tracking-widest text-ink/70">San Luis · Junín 580</span>
+    <span class="mono uppercase tracking-widest text-ink/70 hidden sm:inline">Desde 2010 · Unisex</span>
+    <a href="#turno" class="mono uppercase tracking-widest underline-rust hover:text-rust transition">Pedir turno</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 pt-12 sm:pt-20 pb-12 sm:pb-24">
+    <div class="grid grid-cols-12 gap-4">
+      <div class="col-span-12 md:col-span-8">
+        <p class="mono text-xs sm:text-sm uppercase tracking-[0.25em] text-rust mb-6">— Coloristas & Estilistas</p>
+        <h1 class="display font-light text-[16vw] md:text-[10rem] leading-[0.85] tracking-tight">
+          Fab<span class="italic font-normal">y</span>ana
+          <span class="block ml-[8vw] md:ml-32 -mt-2">&amp; Andrés</span>
+        </h1>
+      </div>
+      <div class="col-span-12 md:col-span-4 md:pt-32 flex flex-col justify-end">
+        <div class="border-l-2 border-rust pl-5">
+          <p class="display italic text-2xl md:text-3xl leading-snug">
+            Contanos qué querés. Lo hacemos realidad.
+          </p>
+          <p class="mt-4 text-ink/70 text-base leading-relaxed">
+            Una peluquería en el centro de San Luis donde te escuchamos antes de tocar la tijera. Cortes, color y cambios de look para hombres y mujeres.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO META -->
+    <div class="mt-12 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 border-t border-ink/20 pt-8">
+      <div>
+        <p class="mono text-xs uppercase tracking-widest text-ink/50">Reseñas Google</p>
+        <p class="display text-3xl md:text-4xl mt-1">4,7 <span class="text-rust">★</span></p>
+        <p class="text-sm text-ink/60">209 opiniones reales</p>
+      </div>
+      <div>
+        <p class="mono text-xs uppercase tracking-widest text-ink/50">Ubicación</p>
+        <p class="display text-xl md:text-2xl mt-1">Junín 580</p>
+        <p class="text-sm text-ink/60">San Luis capital</p>
+      </div>
+      <div>
+        <p class="mono text-xs uppercase tracking-widest text-ink/50">Atención</p>
+        <p class="display text-xl md:text-2xl mt-1">Lun a Vie · 10–17h</p>
+        <p class="text-sm text-ink/60">Sábados hasta las 14</p>
+      </div>
+      <div>
+        <p class="mono text-xs uppercase tracking-widest text-ink/50">Reservá</p>
+        <a href="#turno" class="display text-xl md:text-2xl mt-1 inline-block underline-rust hover:text-rust transition">WhatsApp →</a>
+        <p class="text-sm text-ink/60">Te respondemos en el día</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TICKER -->
+  <div class="bg-ink text-cream py-5 overflow-hidden border-y border-ink">
+    <div class="flex whitespace-nowrap marquee mono uppercase tracking-[0.2em] text-sm">
+      <div class="flex shrink-0 pr-12">
+        <span class="ticker-item">Coloración profesional</span>
+        <span class="ticker-item">Cambios de look</span>
+        <span class="ticker-item">Cortes unisex</span>
+        <span class="ticker-item">Mechas &amp; balayage</span>
+        <span class="ticker-item">Asesoramiento personalizado</span>
+        <span class="ticker-item">Hombres &amp; mujeres</span>
+      </div>
+      <div class="flex shrink-0 pr-12" aria-hidden="true">
+        <span class="ticker-item">Coloración profesional</span>
+        <span class="ticker-item">Cambios de look</span>
+        <span class="ticker-item">Cortes unisex</span>
+        <span class="ticker-item">Mechas &amp; balayage</span>
+        <span class="ticker-item">Asesoramiento personalizado</span>
+        <span class="ticker-item">Hombres &amp; mujeres</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- POR QUÉ NOS ELIGEN -->
+<section class="py-20 sm:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-12 gap-6 mb-16">
+      <div class="col-span-12 md:col-span-5">
+        <p class="mono text-xs uppercase tracking-[0.25em] text-rust mb-4">— 01 / Lo que valoran</p>
+        <h2 class="display text-5xl md:text-6xl leading-[0.95]">
+          Por qué la gente <span class="italic">vuelve</span>.
+        </h2>
+      </div>
+      <div class="col-span-12 md:col-span-6 md:col-start-7 md:pt-6">
+        <p class="text-lg text-ink/75 leading-relaxed">
+          Leímos cada reseña que dejaron nuestros clientes en estos años. Hay cuatro cosas que se repiten una y otra vez. Estas son.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12">
+      <article class="border-t border-ink/25 py-8 grid grid-cols-12 gap-4">
+        <span class="display italic text-rust text-5xl col-span-2">01</span>
+        <div class="col-span-10">
+          <h3 class="display text-2xl mb-2">Te escuchamos. De verdad.</h3>
+          <p class="text-ink/70 leading-relaxed">Antes de cualquier tijera, una charla. Vos contás cómo te imaginás el resultado y nosotros pensamos cómo llegar ahí.</p>
+        </div>
+      </article>
+
+      <article class="border-t border-ink/25 py-8 grid grid-cols-12 gap-4">
+        <span class="display italic text-rust text-5xl col-span-2">02</span>
+        <div class="col-span-10">
+          <h3 class="display text-2xl mb-2">Profesionales con nombre.</h3>
+          <p class="text-ink/70 leading-relaxed">Fabyana, Andrés, Gaby. No sos "la del turno de las 4". Acá el equipo te conoce y te recibe por tu nombre.</p>
+        </div>
+      </article>
+
+      <article class="border-t border-ink/25 py-8 grid grid-cols-12 gap-4">
+        <span class="display italic text-rust text-5xl col-span-2">03</span>
+        <div class="col-span-10">
+          <h3 class="display text-2xl mb-2">Animate al cambio.</h3>
+          <p class="text-ink/70 leading-relaxed">¿Pensaste en otro color, otro largo, otra cosa? Te asesoramos paso a paso para que el cambio te quede como lo soñabas.</p>
+        </div>
+      </article>
+
+      <article class="border-t border-b border-ink/25 py-8 grid grid-cols-12 gap-4">
+        <span class="display italic text-rust text-5xl col-span-2">04</span>
+        <div class="col-span-10">
+          <h3 class="display text-2xl mb-2">Buen ambiente, buena onda.</h3>
+          <p class="text-ink/70 leading-relaxed">Una peluquería donde se está cómodo. Charla si tenés ganas, silencio si querés desconectar. Vos elegís.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<section class="bg-paper border-y border-ink/15 py-20 sm:py-28">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <span class="display text-rust text-7xl leading-none">"</span>
+    <blockquote class="display italic text-3xl sm:text-5xl leading-tight mt-2">
+      Gaby me ayudó a animarme al corte y estoy súper conforme.
+    </blockquote>
+    <p class="mono uppercase tracking-[0.2em] text-xs sm:text-sm text-ink/60 mt-8">— Karen Soledad · Reseña Google ★★★★★</p>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="py-20 sm:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-16">
+      <p class="mono text-xs uppercase tracking-[0.25em] text-rust mb-4">— 02 / Servicios</p>
+      <h2 class="display text-5xl md:text-7xl leading-[0.95] max-w-4xl">
+        Lo que <span class="italic">hacemos</span> con tu pelo.
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-12 gap-y-2">
+
+      <div class="col-span-12 grid grid-cols-12 gap-4 border-t border-ink/30 py-6 hover:bg-paper transition group">
+        <span class="mono text-xs text-ink/50 col-span-12 sm:col-span-1 self-center">SRV·01</span>
+        <h3 class="display text-3xl md:text-4xl col-span-12 sm:col-span-5 self-center">Coloración profesional</h3>
+        <p class="col-span-12 sm:col-span-6 text-ink/70 self-center">Tinturas, mechas, balayage, retoque de raíz. Asesoramos el tono según tu piel, tu pelo y lo que querés transmitir.</p>
+      </div>
+
+      <div class="col-span-12 grid grid-cols-12 gap-4 border-t border-ink/30 py-6 hover:bg-paper transition group">
+        <span class="mono text-xs text-ink/50 col-span-12 sm:col-span-1 self-center">SRV·02</span>
+        <h3 class="display text-3xl md:text-4xl col-span-12 sm:col-span-5 self-center">Cortes unisex</h3>
+        <p class="col-span-12 sm:col-span-6 text-ink/70 self-center">Para él y para ella. Desde un mantenimiento prolijo hasta un corte que te cambie la cara. Pelo lacio, ondulado, rulos: todos bienvenidos.</p>
+      </div>
+
+      <div class="col-span-12 grid grid-cols-12 gap-4 border-t border-ink/30 py-6 hover:bg-paper transition group">
+        <span class="mono text-xs text-ink/50 col-span-12 sm:col-span-1 self-center">SRV·03</span>
+        <h3 class="display text-3xl md:text-4xl col-span-12 sm:col-span-5 self-center">Cambio de look</h3>
+        <p class="col-span-12 sm:col-span-6 text-ink/70 self-center">¿Te decidiste a hacer ese cambio que venís pensando hace meses? Charla previa, propuesta de estilo y resultado paso a paso. Sin sustos.</p>
+      </div>
+
+      <div class="col-span-12 grid grid-cols-12 gap-4 border-t border-ink/30 py-6 hover:bg-paper transition group">
+        <span class="mono text-xs text-ink/50 col-span-12 sm:col-span-1 self-center">SRV·04</span>
+        <h3 class="display text-3xl md:text-4xl col-span-12 sm:col-span-5 self-center">Tratamientos &amp; brushing</h3>
+        <p class="col-span-12 sm:col-span-6 text-ink/70 self-center">Hidratación, nutrición, alisados y peinados para esa salida especial. Para que el pelo se sienta tan bien como se ve.</p>
+      </div>
+
+      <div class="col-span-12 border-t border-b border-ink/30 py-8 mt-2">
+        <p class="display italic text-xl md:text-2xl text-ink/80">
+          ¿Tenés algo en mente que no está acá? Escribinos igual. Probablemente lo hagamos.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="bg-ink text-cream py-20 sm:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-12 gap-6 mb-16">
+      <div class="col-span-12 md:col-span-6">
+        <p class="mono text-xs uppercase tracking-[0.25em] text-rust mb-4">— 03 / Lo dicen ellos</p>
+        <h2 class="display text-5xl md:text-6xl leading-[0.95]">
+          209 reseñas. <br><span class="italic text-rust">4,7 estrellas.</span>
+        </h2>
+      </div>
+      <div class="col-span-12 md:col-span-5 md:col-start-8 md:pt-8">
+        <p class="text-cream/70 text-lg leading-relaxed">
+          Estas son citas literales de Google. Sin retoques. Pasá a leerlas.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-cream/20">
+      <article class="bg-ink p-8 md:p-10">
+        <p class="display text-rust text-2xl mb-3">★★★★★</p>
+        <p class="display italic text-xl md:text-2xl leading-snug">"Lindo ambiente, buena onda. Me hice un cambio de look y me encantó. Gaby me ayudó a animarme al corte y estoy súper conforme. Recomiendo."</p>
+        <p class="mono uppercase tracking-widest text-xs text-cream/60 mt-6">— Karen Soledad</p>
+      </article>
+
+      <article class="bg-ink p-8 md:p-10">
+        <p class="display text-rust text-2xl mb-3">★★★★★</p>
+        <p class="display italic text-xl md:text-2xl leading-snug">"Excelente atención y muy conforme con el trabajo que hacen. Súper profesionales y muy recomendables."</p>
+        <p class="mono uppercase tracking-widest text-xs text-cream/60 mt-6">— Carolina Rosales</p>
+      </article>
+
+      <article class="bg-ink p-8 md:p-10">
+        <p class="display text-rust text-2xl mb-3">★★★★★</p>
+        <p class="display italic text-xl md:text-2xl leading-snug">"Muy buenos, me encantó todo lo que me hizo Fabyana. ¡Justo lo que quería! Recomiendo totalmente."</p>
+        <p class="mono uppercase tracking-widest text-xs text-cream/60 mt-6">— Ada Martinelli</p>
+      </article>
+
+      <article class="bg-ink p-8 md:p-10">
+        <p class="display text-rust text-2xl mb-3">★★★★★</p>
+        <p class="display italic text-xl md:text-2xl leading-snug">"Son los mejores. Excelente atención y servicio. Una experiencia única."</p>
+        <p class="mono uppercase tracking-widest text-xs text-cream/60 mt-6">— Ale Becerra</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VISITANOS / DATOS -->
+<section class="py-20 sm:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-12 gap-8">
+      <div class="col-span-12 md:col-span-5">
+        <p class="mono text-xs uppercase tracking-[0.25em] text-rust mb-4">— 04 / Visitanos</p>
+        <h2 class="display text-5xl md:text-6xl leading-[0.95] mb-10">
+          A media cuadra <br>de la <span class="italic">plaza Pringles</span>.
+        </h2>
+
+        <dl class="space-y-6">
+          <div class="border-t border-ink/25 pt-4">
+            <dt class="mono text-xs uppercase tracking-widest text-ink/50 mb-1">Dirección</dt>
+            <dd class="display text-2xl">Junín 580 · San Luis</dd>
+            <dd class="text-ink/60 text-sm mt-1">D5700, San Luis capital, Argentina</dd>
+          </div>
+
+          <div class="border-t border-ink/25 pt-4">
+            <dt class="mono text-xs uppercase tracking-widest text-ink/50 mb-1">Horarios</dt>
+            <dd class="grid grid-cols-2 gap-y-1 mt-2 text-base">
+              <span>Lunes a viernes</span><span class="mono text-right">10:00 – 17:00</span>
+              <span>Sábados</span><span class="mono text-right">10:00 – 14:00</span>
+              <span class="text-ink/50">Domingos</span><span class="mono text-right text-ink/50">Cerrado</span>
+            </dd>
+          </div>
+
+          <div class="border-t border-ink/25 pt-4">
+            <dt class="mono text-xs uppercase tracking-widest text-ink/50 mb-1">Teléfono</dt>
+            <dd><a href="tel:+542664589076" class="display text-2xl underline-rust hover:text-rust transition">+54 266 458-9076</a></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="col-span-12 md:col-span-7 md:pt-16">
+        <div class="border border-ink/25 overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps?q=-33.3004595,-66.3321677&hl=es&z=16&output=embed"
+            width="100%"
+            height="480"
+            style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Fabyana y Andrés en Junín 580, San Luis">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA WHATSAPP -->
+<section id="turno" class="bg-rust text-cream py-24 sm:py-36 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <p class="mono text-xs uppercase tracking-[0.3em] text-cream/80 mb-6">— Pedí tu turno</p>
+    <h2 class="display text-6xl md:text-8xl lg:text-9xl leading-[0.85] mb-10">
+      Contanos qué <br><span class="italic">querés</span>.
+    </h2>
+    <p class="display italic text-xl md:text-2xl text-cream/90 max-w-2xl mx-auto mb-12">
+      Escribinos por WhatsApp. Te respondemos en el día y coordinamos tu turno con quien te haga sentir más cómodo/a.
+    </p>
+    <a href="https://wa.me/542664589076?text=Hola%21%20Quiero%20pedir%20un%20turno%20en%20Fabyana%20y%20Andr%C3%A9s"
+       class="inline-block bg-cream text-ink px-10 py-6 mono uppercase tracking-[0.2em] text-sm hover:bg-ink hover:text-cream transition border-2 border-cream">
+      Escribir por WhatsApp →
+    </a>
+    <p class="mono text-xs uppercase tracking-widest text-cream/70 mt-8">+54 266 458-9076</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-cream/80 py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-12 gap-6 items-end">
+      <div class="col-span-12 md:col-span-6">
+        <p class="display text-3xl text-cream">Fabyana &amp; Andrés</p>
+        <p class="mono text-xs uppercase tracking-widest text-cream/50 mt-2">Coloristas y estilistas unisex · San Luis</p>
+      </div>
+      <div class="col-span-12 md:col-span-6 md:text-right">
+        <p class="text-sm">
+          <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo Domínguez%21%20Vi%20la%20landing%20que%20armaron%20para%20Fabyana%20Y%20Andres%20Coloristas%20Y%20Estilistas%20Unisex%20y%20quiero%20charlar."
+             class="underline decoration-rust decoration-2 underline-offset-4 hover:text-rust transition">
+            Una propuesta de Rodrigo Domínguez · agendá una llamada
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="border-t border-cream/15 mt-10 pt-6 flex flex-col sm:flex-row justify-between gap-2 mono text-xs uppercase tracking-widest text-cream/40">
+      <span>Junín 580 · D5700 San Luis</span>
+      <span>Peluquería recomendada · 4,7 ★ en Google</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

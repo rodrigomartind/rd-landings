@@ -1,0 +1,27 @@
+.env
+.env.local
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+data/*.db
+data/*.db-journal
+data/exports/
+data/raw/
+
+# Metadata interna de cada landing (no public)
+clients/*/_meta.json
+clients/*/_prompt.txt
+
+# Vercel
+.vercel/
+
+firebase-debug.log
+.DS_Store
+.idea/
+.vscode/

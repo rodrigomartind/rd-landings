@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanguchería CM — El clásico de los sándwiches en Merlo</title>
+<meta name="description" content="Sándwiches de miga artesanales hechos en el momento en Villa de Merlo, San Luis. Más de 570 personas ya eligieron CM. Para comer acá o llevar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=IBM+Plex+Mono:wght@300;400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          mono: ['"IBM Plex Mono"', 'monospace'],
+          sans: ['"DM Sans"', 'sans-serif'],
+        },
+        colors: {
+          cream: '#F4ECD8',
+          paper: '#EFE3C7',
+          mustard: '#D4A24C',
+          tomato: '#B5331E',
+          espresso: '#2A1A12',
+          olive: '#5C5230',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { background-color: #F4ECD8; color: #2A1A12; }
+  .grain { background-image: radial-gradient(circle at 1px 1px, rgba(42,26,18,0.07) 1px, transparent 0); background-size: 18px 18px; }
+  .ticker { animation: scroll 40s linear infinite; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .leader::after { content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."; letter-spacing: 2px; color: #B5331E; }
+  .underline-deco { background-image: linear-gradient(transparent 70%, #D4A24C 70%); background-repeat: no-repeat; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #B5331E; outline-offset: 4px; }
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- TOP BAR -->
+<div class="bg-espresso text-cream font-mono text-[11px] tracking-[0.2em] uppercase">
+  <div class="overflow-hidden whitespace-nowrap py-2.5">
+    <div class="ticker inline-block">
+      <span class="px-6">⭐ 4.7 sobre 574 opiniones reales en Google</span>
+      <span class="px-6 text-mustard">·</span>
+      <span class="px-6">Recién hechos, todos los días</span>
+      <span class="px-6 text-mustard">·</span>
+      <span class="px-6">Villa de Merlo — San Luis</span>
+      <span class="px-6 text-mustard">·</span>
+      <span class="px-6">Para comer acá o llevar</span>
+      <span class="px-6 text-mustard">·</span>
+      <span class="px-6">⭐ 4.7 sobre 574 opiniones reales en Google</span>
+      <span class="px-6 text-mustard">·</span>
+      <span class="px-6">Recién hechos, todos los días</span>
+      <span class="px-6 text-mustard">·</span>
+      <span class="px-6">Villa de Merlo — San Luis</span>
+      <span class="px-6 text-mustard">·</span>
+      <span class="px-6">Para comer acá o llevar</span>
+      <span class="px-6 text-mustard">·</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="border-b border-espresso/20">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="font-display font-black text-xl tracking-tight">CM<span class="text-tomato">.</span></div>
+    <nav class="hidden md:flex gap-8 font-mono text-xs uppercase tracking-widest">
+      <a href="#carta" class="hover:text-tomato transition">Carta</a>
+      <a href="#historia" class="hover:text-tomato transition">Historia</a>
+      <a href="#opinan" class="hover:text-tomato transition">Opinan</a>
+      <a href="#visitanos" class="hover:text-tomato transition">Visitanos</a>
+    </nav>
+    <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Sangucher%C3%ADa%20CM%20y%20quiero%20charlar." class="font-mono text-xs uppercase tracking-widest border border-espresso px-4 py-2 hover:bg-espresso hover:text-cream transition">Pedir ahora</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative grain overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 pt-16 pb-10 md:pt-24 md:pb-16">
+    <div class="font-mono text-xs uppercase tracking-[0.3em] text-olive mb-8">
+      ✦ Desde Juana Azurduy 849 — Villa de Merlo
+    </div>
+
+    <h1 class="font-display font-black leading-[0.85] tracking-tighter text-[18vw] md:text-[14vw] lg:text-[180px]">
+      <span class="block">Sangu-</span>
+      <span class="block italic font-light text-tomato -mt-2 md:-mt-6">chería</span>
+      <span class="block -mt-2 md:-mt-6">CM<span class="text-mustard">.</span></span>
+    </h1>
+
+    <div class="grid md:grid-cols-12 gap-8 mt-12 md:mt-16">
+      <div class="md:col-span-5 md:col-start-1">
+        <p class="font-display text-2xl md:text-3xl leading-snug">
+          El clásico de los sándwiches en Merlo. <span class="italic text-tomato">Desde siempre.</span>
+        </p>
+      </div>
+      <div class="md:col-span-5 md:col-start-8">
+        <p class="font-sans text-base md:text-lg leading-relaxed text-espresso/80">
+          Sándwiches de miga elaborados en el momento, con la variedad de gustos que ya es parte del paisaje serrano. Vení, elegí, y los armamos para vos.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-4">
+          <a href="tel:+542656472256" class="bg-espresso text-cream font-mono text-xs uppercase tracking-widest px-6 py-4 hover:bg-tomato transition">
+            Encargá → 2656 47-2256
+          </a>
+          <a href="#carta" class="font-mono text-xs uppercase tracking-widest underline-deco">
+            Ver la carta
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="border-y-2 border-espresso bg-paper">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-baseline justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.25em]">
+    <span>★★★★★ 4.7</span>
+    <span class="hidden md:inline">574 reseñas en Google</span>
+    <span>Lun a Sáb · 8 a 14 h</span>
+    <span>· y de 18 a 22 h</span>
+  </div>
+</div>
+
+<!-- POR QUÉ NOS ELIGEN -->
+<section id="historia" class="py-20 md:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-12 gap-8 mb-16">
+      <div class="md:col-span-3">
+        <div class="font-mono text-xs uppercase tracking-[0.3em] text-tomato">— 01</div>
+        <div class="font-mono text-xs uppercase tracking-widest mt-2 text-olive">Por qué vuelven</div>
+      </div>
+      <h2 class="md:col-span-9 font-display font-light text-4xl md:text-6xl leading-[1.05] tracking-tight">
+        Lo que más valoran los que <span class="italic font-black text-tomato">vienen, repiten y traen a otros.</span>
+      </h2>
+    </div>
+
+    <div class="border-t border-espresso/30">
+
+      <article class="grid md:grid-cols-12 gap-8 py-10 border-b border-espresso/30">
+        <div class="md:col-span-2 font-display font-black text-5xl md:text-7xl text-mustard leading-none">01</div>
+        <h3 class="md:col-span-4 font-display text-2xl md:text-3xl leading-tight">Recién hechos, en el momento.</h3>
+        <p class="md:col-span-6 text-espresso/80 leading-relaxed">
+          Nada de heladeras llenas de sándwiches del día anterior. Elegís el gusto, lo armamos y te lo llevás caliente o tostado, como prefieras. Frescura visible, no prometida.
+        </p>
+      </article>
+
+      <article class="grid md:grid-cols-12 gap-8 py-10 border-b border-espresso/30">
+        <div class="md:col-span-2 font-display font-black text-5xl md:text-7xl text-mustard leading-none">02</div>
+        <h3 class="md:col-span-4 font-display text-2xl md:text-3xl leading-tight">Tantos gustos como hambre tengas.</h3>
+        <p class="md:col-span-6 text-espresso/80 leading-relaxed">
+          Crudo y queso, jamón y morrón, atún, palmitos, huevo, especiales de la casa. Por plancha de cuatro grandes triangulares o pack pre-armado. Vos elegís cómo arrancar.
+        </p>
+      </article>
+
+      <article class="grid md:grid-cols-12 gap-8 py-10 border-b border-espresso/30">
+        <div class="md:col-span-2 font-display font-black text-5xl md:text-7xl text-mustard leading-none">03</div>
+        <h3 class="md:col-span-4 font-display text-2xl md:text-3xl leading-tight">Atención de las que ya no abundan.</h3>
+        <p class="md:col-span-6 text-espresso/80 leading-relaxed">
+          Personal amable, paciencia para explicarte la carta y el corte que prefieras. Acá no sos un ticket: sos el de siempre, aunque vengas por primera vez.
+        </p>
+      </article>
+
+      <article class="grid md:grid-cols-12 gap-8 py-10">
+        <div class="md:col-span-2 font-display font-black text-5xl md:text-7xl text-mustard leading-none">04</div>
+        <h3 class="md:col-span-4 font-display text-2xl md:text-3xl leading-tight">Comer acá o llevarte. Da igual: salen iguales.</h3>
+        <p class="md:col-span-6 text-espresso/80 leading-relaxed">
+          Hay mesas dentro del local para quedarte a almorzar, y caja con vidrio protector si es para llevar al cerro o al hospedaje. La cocina trabaja igual para los dos.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CARTA / PULL QUOTE -->
+<section id="carta" class="bg-espresso text-cream py-24 md:py-36 relative overflow-hidden">
+  <div class="absolute -top-10 -right-10 font-display font-black text-[40vw] md:text-[20vw] leading-none text-tomato/10 select-none">CM</div>
+  <div class="max-w-7xl mx-auto px-6 relative">
+    <div class="font-mono text-xs uppercase tracking-[0.3em] text-mustard mb-8">— 02 / La carta</div>
+    <h2 class="font-display font-light text-4xl md:text-6xl leading-[1.05] max-w-4xl">
+      Elegí tu gusto. <span class="italic">Nosotros lo armamos para vos.</span>
+    </h2>
+
+    <div class="mt-16 grid md:grid-cols-2 gap-x-16 gap-y-2">
+      <div>
+        <div class="font-mono text-[11px] uppercase tracking-[0.25em] text-mustard pb-3 border-b border-cream/20 mb-4">Sándwiches de miga · simples</div>
+        <ul class="space-y-3 font-display text-lg">
+          <li class="flex items-baseline gap-2"><span>Jamón &amp; queso</span><span class="leader flex-1"></span><span class="font-mono text-sm">CLÁSICO</span></li>
+          <li class="flex items-baseline gap-2"><span>Crudo &amp; queso</span><span class="leader flex-1"></span><span class="font-mono text-sm">CLÁSICO</span></li>
+          <li class="flex items-baseline gap-2"><span>Pollo</span><span class="leader flex-1"></span><span class="font-mono text-sm">CLÁSICO</span></li>
+          <li class="flex items-baseline gap-2"><span>Atún</span><span class="leader flex-1"></span><span class="font-mono text-sm">CLÁSICO</span></li>
+          <li class="flex items-baseline gap-2"><span>Huevo</span><span class="leader flex-1"></span><span class="font-mono text-sm">CLÁSICO</span></li>
+        </ul>
+      </div>
+      <div class="mt-12 md:mt-0">
+        <div class="font-mono text-[11px] uppercase tracking-[0.25em] text-mustard pb-3 border-b border-cream/20 mb-4">Especiales &amp; combinados</div>
+        <ul class="space-y-3 font-display text-lg">
+          <li class="flex items-baseline gap-2"><span>Palmitos &amp; salsa golf</span><span class="leader flex-1"></span><span class="font-mono text-sm">★</span></li>
+          <li class="flex items-baseline gap-2"><span>Crudo, queso &amp; morrón</span><span class="leader flex-1"></span><span class="font-mono text-sm">★</span></li>
+          <li class="flex items-baseline gap-2"><span>Jamón, queso &amp; tomate</span><span class="leader flex-1"></span><span class="font-mono text-sm">★</span></li>
+          <li class="flex items-baseline gap-2"><span>Roquefort &amp; nuez</span><span class="leader flex-1"></span><span class="font-mono text-sm">★</span></li>
+          <li class="flex items-baseline gap-2"><span>De la casa CM</span><span class="leader flex-1"></span><span class="font-mono text-sm">★</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-3 gap-8 pt-10 border-t border-cream/20">
+      <div>
+        <div class="font-display text-3xl md:text-4xl">Por plancha</div>
+        <p class="text-cream/70 mt-2 text-sm">Cuatro triangulares grandes por gusto. Te los cortamos como prefieras.</p>
+      </div>
+      <div>
+        <div class="font-display text-3xl md:text-4xl">Pack pre-armado</div>
+        <p class="text-cream/70 mt-2 text-sm">Tres sándwiches surtidos para cuando andás corto de tiempo.</p>
+      </div>
+      <div>
+        <div class="font-display text-3xl md:text-4xl">¿Tostados?</div>
+        <p class="text-cream/70 mt-2 text-sm">Decinos al pedirlos y salen calentitos. Sin cargo extra.</p>
+      </div>
+    </div>
+
+    <p class="mt-12 font-mono text-[11px] uppercase tracking-[0.25em] text-cream/50">
+      ¿Eventos, reuniones, catering? Coordinamos pedidos con anticipación. Llamá al local.
+    </p>
+  </div>
+</section>
+
+<!-- BIG QUOTE -->
+<section class="py-24 md:py-32 grain">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <div class="font-display text-tomato text-7xl md:text-8xl leading-none">"</div>
+    <blockquote class="font-display italic font-light text-3xl md:text-5xl leading-tight mt-2">
+      Un clásico de los sándwiches en Merlo. Siempre que venimos compramos acá y seguramente lo seguiremos haciendo.
+    </blockquote>
+    <div class="mt-10 font-mono text-xs uppercase tracking-[0.3em] text-olive">— Horacio J., en Google</div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="opinan" class="bg-paper border-y-2 border-espresso py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-12 gap-8 mb-16 items-end">
+      <div class="md:col-span-7">
+        <div class="font-mono text-xs uppercase tracking-[0.3em] text-tomato mb-4">— 03 / Lo que dicen</div>
+        <h2 class="font-display font-light text-4xl md:text-6xl leading-[1.05]">
+          Más de <span class="font-black italic text-tomato">570</span> personas ya eligieron CM.
+        </h2>
+      </div>
+      <div class="md:col-span-5">
+        <p class="text-espresso/80 leading-relaxed">
+          Reseñas reales y verificadas en Google Maps. Estos son algunos de quienes pasaron por el local de Juana Azurduy 849 y se tomaron el tiempo de contarlo.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <article class="bg-cream border border-espresso p-8 flex flex-col">
+        <div class="font-mono text-xs tracking-widest text-tomato mb-4">★★★★★</div>
+        <p class="font-display text-xl leading-snug flex-1">
+          "Un clásico de los sándwiches en Merlo. La calidad de sus productos es destacable. Son muy buenos y las opciones a elegir también."
+        </p>
+        <div class="mt-6 pt-4 border-t border-espresso/20 font-mono text-[11px] uppercase tracking-widest">
+          Horacio J. <span class="text-olive">/ visitante recurrente</span>
+        </div>
+      </article>
+
+      <article class="bg-mustard border border-espresso p-8 flex flex-col md:translate-y-6">
+        <div class="font-mono text-xs tracking-widest text-tomato mb-4">★★★★★</div>
+        <p class="font-display text-xl leading-snug flex-1">
+          "Muy buenos los sándwiches. Y muy amable el personal."
+        </p>
+        <div class="mt-6 pt-4 border-t border-espresso/30 font-mono text-[11px] uppercase tracking-widest">
+          Olga B. <span class="text-espresso/70">/ vecina de Merlo</span>
+        </div>
+      </article>
+
+      <article class="bg-cream border border-espresso p-8 flex flex-col">
+        <div class="font-mono text-xs tracking-widest text-tomato mb-4">★★★★</div>
+        <p class="font-display text-xl leading-snug flex-1">
+          "Los sándwiches de miga son ricos. Hay muchos gustos. Te los hacen en el momento. Si querés, te los tuestan. Cuenta con vidrio protector en la caja."
+        </p>
+        <div class="mt-6 pt-4 border-t border-espresso/20 font-mono text-[11px] uppercase tracking-widest">
+          Brenda <span class="text-olive">/ reseña detallada</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VISITANOS -->
+<section id="visitanos" class="py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-5">
+        <div class="font-mono text-xs uppercase tracking-[0.3em] text-tomato mb-4">— 04 / Visitanos</div>
+        <h2 class="font-display font-light text-4xl md:text-5xl leading-[1.05] mb-10">
+          Estamos donde siempre. <span class="italic font-black">Bien en el centro de Merlo.</span>
+        </h2>
+
+        <div class="space-y-8">
+          <div>
+            <div class="font-mono text-[11px] uppercase tracking-[0.25em] text-olive mb-2">Dirección</div>
+            <p class="font-display text-2xl leading-tight">Juana Azurduy 849<br><span class="text-espresso/70">Villa de Merlo, San Luis</span></p>
+          </div>
+
+          <div>
+            <div class="font-mono text-[11px] uppercase tracking-[0.25em] text-olive mb-2">Teléfono</div>
+            <a href="tel:+542656472256" class="font-display text-2xl underline-deco">2656 47-2256</a>
+          </div>
+
+          <div>
+            <div class="font-mono text-[11px] uppercase tracking-[0.25em] text-olive mb-3">Horarios</div>
+            <ul class="font-mono text-sm space-y-1.5">
+              <li class="flex justify-between border-b border-espresso/15 pb-1.5"><span>Lunes — Sábado</span><span>08—14 h</span></li>
+              <li class="flex justify-between border-b border-espresso/15 pb-1.5"><span>Lunes — Sábado</span><span>18—22 h</span></li>
+              <li class="flex justify-between text-tomato"><span>Domingo</span><span>cerrado</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-7">
+        <div class="border-2 border-espresso h-full min-h-[400px]">
+          <iframe
+            src="https://www.google.com/maps?q=-32.342352,-65.019724&hl=es&z=16&output=embed"
+            width="100%" height="100%" style="min-height:400px; border:0; display:block;"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de Sanguchería CM en Villa de Merlo"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA WHATSAPP -->
+<section class="bg-tomato text-cream py-24 md:py-32 relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <div class="font-mono text-xs uppercase tracking-[0.3em] text-cream/70 mb-8">Encargá tu plancha</div>
+    <h2 class="font-display font-black text-5xl md:text-8xl leading-[0.95] tracking-tight">
+      Llegá con<br><span class="italic font-light">hambre</span> de verdad.
+    </h2>
+    <p class="mt-8 max-w-xl mx-auto text-cream/90 leading-relaxed">
+      Mandanos un WhatsApp y coordinamos tu pedido para retirar por el local — o tu próximo catering de sándwiches en Merlo.
+    </p>
+    <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Sangucher%C3%ADa%20CM%20y%20quiero%20charlar."
+       class="inline-block mt-10 bg-cream text-espresso font-mono text-sm uppercase tracking-[0.25em] px-10 py-5 hover:bg-mustard transition">
+      Escribir por WhatsApp →
+    </a>
+    <div class="mt-6 font-mono text-xs text-cream/70">o llamá al 2656 47-2256</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-espresso text-cream py-12">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
+    <div class="font-display font-black text-3xl">CM<span class="text-tomato">.</span></div>
+    <div class="font-mono text-[11px] uppercase tracking-[0.25em] text-cream/70 text-center">
+      Sanguchería · Merlo · San Luis · desde siempre
+    </div>
+    <div class="md:text-right font-mono text-[11px] uppercase tracking-[0.2em]">
+      <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo!%20Vi%20la%20landing%20que%20armaste%20para%20Sangucher%C3%ADa%20CM%20y%20quiero%20charlar." class="hover:text-mustard transition">
+        Una propuesta de Rodrigo Domínguez · agendá una llamada →
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

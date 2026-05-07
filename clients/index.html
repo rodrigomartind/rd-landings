@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rodrigo Domínguez · Software Engineer</title>
+<meta name="description" content="Software Engineer con 10+ años de experiencia. Despegar, Mercado Libre, Kavak, Ualá. Ahora construyendo landings para comercios de San Luis.">
+<meta name="theme-color" content="#1c1815">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22&gt;&lt;text x=%220%22 y=%2214%22 font-size=%2214%22 font-family=%22monospace%22 fill=%22%23b84a1f%22&gt;▸&lt;/text&gt;&lt;/svg&gt;">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0d0c;
+    --bg-alt: #161413;
+    --ink: #f5f0e6;
+    --ink-soft: #c9c2b6;
+    --muted: #7a7468;
+    --line: #2a2622;
+    --line-soft: #1d1a17;
+    --rust: #d65a2a;
+    --rust-soft: #b84a1f;
+    --green: #6a9968;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--ink); }
+  body {
+    font-family: 'Rubik', system-ui, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container { max-width: 1320px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 640px) { .container { padding: 0 20px; } }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  a { color: inherit; text-decoration: none; }
+
+  /* === TOP BAR === */
+  .topbar {
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .topbar .brand-mark { display: flex; align-items: center; gap: 10px; }
+  .topbar .brand-dot {
+    width: 8px; height: 8px; border-radius: 9999px;
+    background: var(--green);
+    box-shadow: 0 0 8px var(--green);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; } 50% { opacity: 0.5; }
+  }
+  .topbar .brand-name { color: var(--ink); font-weight: 600; letter-spacing: 0.1em; }
+
+  .contact-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .contact-links a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding: 6px 14px;
+    border-left: 1px solid var(--line);
+    transition: color 0.2s ease, background 0.2s ease;
+    font-weight: 500;
+  }
+  .contact-links a:first-child { border-left: none; padding-left: 0; }
+  .contact-links a:hover { color: var(--rust); }
+  .contact-links .ext {
+    margin-left: 4px;
+    opacity: 0.5;
+    transition: opacity 0.2s ease, color 0.2s ease;
+  }
+  .contact-links a:hover .ext { opacity: 1; color: var(--rust); }
+  @media (max-width: 640px) {
+    .contact-links a { padding: 6px 10px; font-size: 10px; }
+    .contact-links a:first-child { padding-left: 0; }
+  }
+
+  /* === HERO === */
+  header.hero {
+    padding: 96px 0 80px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+  .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--rust);
+    font-weight: 600;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .hero-eyebrow::before {
+    content: '▸';
+    color: var(--rust);
+    font-weight: 700;
+  }
+  .hero-eyebrow .arrow-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--rust) 0%, transparent 70%);
+    max-width: 200px;
+    opacity: 0.4;
+  }
+
+  h1.name {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: clamp(56px, 12vw, 172px);
+    line-height: 0.9;
+    letter-spacing: -0.045em;
+    margin-left: -0.03em;
+    margin-bottom: 56px;
+    color: var(--ink);
+  }
+  h1.name em {
+    font-style: normal;
+    font-weight: 300;
+    color: var(--ink-soft);
+  }
+  h1.name .dot { color: var(--rust); font-weight: 700; }
+
+  .lead {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 1100px;
+  }
+  @media (min-width: 900px) {
+    .lead { grid-template-columns: 7fr 5fr; gap: 80px; align-items: start; }
+  }
+  .lead-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(20px, 2.3vw, 28px);
+    font-weight: 300;
+    line-height: 1.32;
+    letter-spacing: -0.012em;
+    color: var(--ink);
+  }
+  .lead-text em { font-style: italic; color: var(--rust); font-weight: 400; }
+  .lead-text .accent { color: var(--rust); }
+
+  .stack-block {
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+  }
+  .stack-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 18px;
+  }
+  .stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+  }
+  .stack-item {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    background: var(--bg-alt);
+    letter-spacing: 0.04em;
+  }
+  .stack-item:hover { border-color: var(--rust); color: var(--rust); }
+
+  /* === STATS BAND === */
+  .stats {
+    border-bottom: 1px solid var(--line);
+    background: var(--bg-alt);
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  @media (min-width: 768px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+  .stat {
+    padding: 28px 32px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  @media (min-width: 768px) {
+    .stat:nth-child(4) { border-right: none; }
+    .stat { border-bottom: none; }
+  }
+  @media (max-width: 767px) {
+    .stat:nth-child(2n) { border-right: none; }
+    .stat:nth-child(n+3) { border-bottom: none; }
+  }
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .stat-value {
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .stat-value .unit {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    margin-left: 6px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+  }
+
+  /* === PORTFOLIO === */
+  section.portfolio { padding: 96px 0 120px; }
+  .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rust);
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-tag::before { content: '//'; color: var(--rust); opacity: 0.6; }
+  .section-title {
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(40px, 5.5vw, 72px);
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: -0.028em;
+    max-width: 800px;
+  }
+  .section-title em { font-style: italic; font-weight: 400; }
+  .section-title .accent { color: var(--rust); }
+  .section-counter {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: right;
+    white-space: nowrap;
+  }
+  .section-counter strong {
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .section-intro {
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-size: clamp(16px, 1.6vw, 20px);
+    color: var(--ink-soft);
+    max-width: 760px;
+    margin: 24px 0 56px;
+    line-height: 1.55;
+  }
+
+  /* === CASE CARDS === */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .case {
+    background: var(--bg);
+    padding: 32px 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    transition: background 0.25s ease;
+    min-height: 280px;
+    position: relative;
+  }
+  .case:hover { background: var(--bg-alt); }
+  .case:hover .case-cta { color: var(--rust); }
+  .case:hover .case-name { color: var(--rust); }
+
+  .case-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .case-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--rust);
+    letter-spacing: 0.08em;
+  }
+  .case-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    text-align: right;
+  }
+  .case-name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    transition: color 0.2s ease;
+  }
+  .case-pitch {
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.35;
+    color: var(--ink-soft);
+    flex: 1;
+    /* limpio comillas si el contenido viene con ellas */
+  }
+  .case-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+  .case-stat {
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .case-cta {
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  /* === ABOUT BAND === */
+  section.about {
+    border-top: 1px solid var(--line);
+    background: var(--bg-alt);
+    padding: 80px 0;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    max-width: 1100px;
+  }
+  @media (min-width: 768px) {
+    .about-grid { grid-template-columns: 1fr 2fr; gap: 64px; }
+  }
+  .about-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rust);
+    font-weight: 600;
+  }
+  .about-tag::before { content: '// '; opacity: 0.6; }
+  .about-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 300;
+    line-height: 1.45;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .about-text em { font-style: italic; color: var(--rust); }
+  .about-text p + p { margin-top: 20px; }
+
+  /* === FOOTER === */
+  footer.site-footer {
+    border-top: 1px solid var(--line);
+    padding: 32px 0 40px;
+  }
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+  .footer-grid .brand {
+    color: var(--ink);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+  .footer-grid .copy-note { opacity: 0.7; }
+  .footer-links {
+    display: flex;
+    gap: 0;
+    align-items: center;
+  }
+  .footer-links a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding: 4px 14px;
+    border-left: 1px solid var(--line);
+    transition: color 0.2s ease;
+    font-weight: 500;
+  }
+  .footer-links a:first-child { border-left: none; padding-left: 0; }
+  .footer-links a:hover { color: var(--rust); }
+
+  ::selection { background: var(--rust); color: var(--ink); }
+  ::-moz-selection { background: var(--rust); color: var(--ink); }
+
+  /* link focus visible */
+  a:focus-visible { outline: 2px solid var(--rust); outline-offset: 4px; }
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="topbar">
+      <div class="brand-mark">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Rodrigo Domínguez</span>
+      </div>
+      <nav class="contact-links">
+        <a href="https://www.linkedin.com/in/rodrigo-martin-dominguez-463b5a33/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="ext">↗</span></a>
+        <a href="mailto:rodrigomartind@gmail.com">Email<span class="ext">↗</span></a>
+        <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo%21%20Vi%20tu%20portfolio%20y%20quer%C3%ADa%20charlar." target="_blank" rel="noopener noreferrer">WhatsApp<span class="ext">↗</span></a>
+      </nav>
+    </div>
+
+    <header class="hero">
+      <div class="hero-eyebrow">
+        <span>Software Engineer · Buenos Aires</span>
+        <span class="arrow-line"></span>
+      </div>
+
+      <h1 class="name">Rodrigo<br><em>Domínguez</em><span class="dot">.</span></h1>
+
+      <div class="lead">
+        <p class="lead-text">
+          Diseño y construyo <em>productos digitales</em> desde hace más de <em>10 años</em>. Esta es mi <span class="accent">software factory</span> personal — donde uso lo que aprendí en escala para construir landings que <em>convierten</em> para comercios de San Luis.
+        </p>
+        <div class="stack-block">
+          <div class="stack-label">// pasé por</div>
+          <div class="stack-list">
+            <span class="stack-item">Despegar</span>
+            <span class="stack-item">Mercado Libre</span>
+            <span class="stack-item">Kavak</span>
+            <span class="stack-item">Ualá</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  </div>
+
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-label">// proyectos</div>
+          <div class="stat-value">11<span class="unit">activos</span></div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">// rubros</div>
+          <div class="stat-value">10<span class="unit">verticales</span></div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">// ciudades</div>
+          <div class="stat-value">4<span class="unit">san luis</span></div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">// experiencia</div>
+          <div class="stat-value">10<span class="unit">años</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <section class="portfolio">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">case studies · 2026</div>
+          <h2 class="section-title">Landings <em>en producción</em><span class="accent">.</span></h2>
+        </div>
+        <div class="section-counter">
+          <strong>11</strong> proyectos<br>
+          <span style="opacity: 0.6;">listos para presentar</span>
+        </div>
+      </div>
+      <p class="section-intro">
+        Cada proyecto se construye sobre lo que las reseñas reales del comercio dicen — sus fortalezas, sus dolores, los ángulos que solo alguien que las leyó atentamente sabría usar. La cita en cada card es el ángulo principal de la landing.
+      </p>
+      <div class="grid">
+        
+    <a href="arenas-de-la-punta/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">01</span>
+        <span class="case-tag">hotel · la punta</span>
+      </div>
+      <h3 class="case-name">Arenas de La Punta</h3>
+      <p class="case-pitch">"Despertate con las sierras de San Luis en tu ventana"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.2 · 2018 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="complejo-deportivo-toribio-mendoza/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">02</span>
+        <span class="case-tag">gimnasio · san luis</span>
+      </div>
+      <h3 class="case-name">Complejo Deportivo Toribio Mendoza</h3>
+      <p class="case-pitch">"El gimnasio más completo de San Luis: máquinas, funcional y pileta, todo en un solo lugar"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.3 · 1589 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="sangucheria-cm/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">03</span>
+        <span class="case-tag">catering · villa merlo</span>
+      </div>
+      <h3 class="case-name">Sanguchería CM</h3>
+      <p class="case-pitch">"Elaborados en el momento, para que llegues con hambre de verdad"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.7 · 574 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="parthenon-salon-de-eventos/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">04</span>
+        <span class="case-tag">salon de fiestas · san luis</span>
+      </div>
+      <h3 class="case-name">Parthenon Salón de Eventos</h3>
+      <p class="case-pitch">"El salón más grande de San Luis para tu evento más grande"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.3 · 503 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="hospedaje-eden/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">05</span>
+        <span class="case-tag">cabanas · san luis</span>
+      </div>
+      <h3 class="case-name">Hospedaje Edén</h3>
+      <p class="case-pitch">"8 años eligiéndonos no es casualidad"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.3 · 432 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="peluqueria-cristian-gentile/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">06</span>
+        <span class="case-tag">peluqueria · san luis</span>
+      </div>
+      <h3 class="case-name">Peluquería Cristian Gentile</h3>
+      <p class="case-pitch">"El lugar donde tu hijo pide volver solo"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.7 · 217 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="fabyana-y-andres-coloristas-y-estilistas-unisex/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">07</span>
+        <span class="case-tag">peluqueria · san luis</span>
+      </div>
+      <h3 class="case-name">Fabyana Y Andres Coloristas Y Estilistas Unisex</h3>
+      <p class="case-pitch">"Contanos qué querés y lo hacemos realidad"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.7 · 209 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="belgrano-integral/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">08</span>
+        <span class="case-tag">centro de estetica · san luis</span>
+      </div>
+      <h3 class="case-name">BELGRANO INTEGRAL</h3>
+      <p class="case-pitch">"Todo lo que necesitás para verte y sentirte bien, en un solo lugar y a precios que te sorprenden"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.5 · 199 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="fucsia-card/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">09</span>
+        <span class="case-tag">spa · san luis</span>
+      </div>
+      <h3 class="case-name">Fucsia Card</h3>
+      <p class="case-pitch">"Turno confirmado, sesión garantizada"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.4 · 150 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="centro-odontologico-arrua/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">10</span>
+        <span class="case-tag">consultorio odontologico · san luis</span>
+      </div>
+      <h3 class="case-name">Centro Odontológico Arrúa</h3>
+      <p class="case-pitch">"La recepción que te escucha y organiza el turno según tu vida, no al revés"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.9 · 127 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+
+    <a href="cabanas-angela/index.html" class="case">
+      <div class="case-head">
+        <span class="case-num">11</span>
+        <span class="case-tag">hostel · potrero</span>
+      </div>
+      <h3 class="case-name">Cabañas Angela</h3>
+      <p class="case-pitch">"El lugar donde los que vinieron una vez, vuelven todos los años"</p>
+      <div class="case-foot">
+        <span class="case-stat">★ 4.3 · 79 reseñas</span>
+        <span class="case-cta">ver →</span>
+      </div>
+    </a>
+    
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-grid" style="margin: 0 -32px; padding: 0 32px;">
+        <div>
+          <div class="about-tag">cómo trabajo</div>
+        </div>
+        <div class="about-text">
+          <p>
+            Junto reseñas de Google, las analizo, extraigo los <em>ángulos de venta reales</em> — y los convierto en landings que se sienten escritas por alguien que conoce el negocio.
+          </p>
+          <p>
+            Sin templates. Sin AI slop. Cada landing tiene su propia tipografía, su propia paleta, su propio ritmo — anclados en lo que dice la gente que ya es cliente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <span class="brand">Rodrigo Domínguez</span>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/rodrigo-martin-dominguez-463b5a33/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:rodrigomartind@gmail.com">Email</a>
+          <a href="https://wa.me/5491134000444?text=Hola%20Rodrigo%21%20Vi%20tu%20portfolio%20y%20quer%C3%ADa%20charlar." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+        <span class="copy-note">2026 · San Luis · Argentina</span>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
